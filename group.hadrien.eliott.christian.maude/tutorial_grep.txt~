@@ -37,7 +37,24 @@ Syntax: find .-name "*.mp3" |grep -i JayZ | grep -vi "remix"
 
 7) Checking for full words, not for sub-strings with grep -w
    -------------------------------------------------------------
-   Syntax: grep -i 
+   Syntax: grep -w "string" filename
+   It will search for the entire word "string" in the file and not  for a sub-string.
 
-8) Using grep 
+8) Using grep -v to ignore a word
+    --------------------------------------
+Syntax: grep -v myword filename
+Using -v will print every words except myword
 
+9) Counting the number of matches  with -c
+    ---------------------------------------------------
+    Syntax: grep -c "pattern" filename
+    It counts how many lines mathces the given "pattern".
+     
+ 10) Using grep -V to know the version of the file
+     -------------------------------------------------
+    Syntax: grep -V "file.txt"
+
+11) Put the results in color 
+    -----------------------------------
+Syntax: export GREP_OPTIONS='--color=auto' GREP_COLOR='100;8'
+            grep iTx index.html
