@@ -15,3 +15,8 @@ Command Grep -c = search with Counting
 Command Grep -n = search with line
 >>$ grep -n "wordToSearch" filename
 
+Use the -l option to list file name whose contents mention main():
+>>$ grep -l 'main' *.c
+
+Use grep to search 2 different words
+$ egrep -w 'word1|word2' /path/to/file
