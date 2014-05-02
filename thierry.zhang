@@ -1,0 +1,17 @@
+tutorial grep linux command:
+
+Command Grep -R = use grep recursively
+>>$ grep -R "wordToSearch" filename  
+
+Command Grep -i = not caseSentitive
+>>$ grep -i "wordToSearch" filename
+
+Command Grep -w = search word only
+>>$ grep -n "wordToSearch" filename
+
+Command Grep -c = search with Counting
+>>$ grep -c "wordToSearch" filename
+
+Command Grep -n = search with line
+>>$ grep -n "wordToSearch" filename
+
