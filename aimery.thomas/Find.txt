@@ -1,8 +1,12 @@
-About find command:
+Informations about find command
 
 "find" command allows to find files or folders in your computer.
+
+	find -name "nameofyourfile"
+
+This command will return all the paths where the file nameofyourfile is.
  
-If you want to select what you select what you want to find use -type option:
+If you want to select what you want to find use -type option:
 
 	find -type f -> files
 	find -type d -> folders
@@ -14,8 +18,11 @@ If you want to find all files beginning by "test" for example you can use '*':
 If no path is defined find command will be executed on the current directory.
 If you want to find a file in a specific folder use:
 
-	find 'specificPath' -name 'nameofyourfile'
+	find 'specificPath' -name "nameofyourfile"
 
+If you want to find all files that don't contain a specific string of characters you can use '!':
+
+	find ! -name "*test*" -> this command will return all files that do not contain 'test'
 
 	
 
