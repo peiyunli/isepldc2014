@@ -1,0 +1,1 @@
+# bzg: Summary of the git workflows used during the course.

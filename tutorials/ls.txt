@@ -1,32 +1,52 @@
-Tutoriel sur la commande "ls" sous linux
------------------------------------------
+# bzg: This needs to be translated.
+# bzg: Also the formatting could be improved.
 
-La commande ls permet d'afficher les sous r�pertoires et fichiers pr�sents dans le r�pertoire actuel. 
-exemple :
-		Home: ~>ls
-			bureau  musiques  vid�os  images  mongoDB
+Tutoriel sur la commande "ls" et les liens sous linux
+------------------------------------------------------
+
+La commande ls permet d'afficher les sous répertoires et fichiers
+présents dans le répertoire actuel.  exemple : Home: ~>ls bureau
+musiques vidéos images mongoDB
 
 Les flags
 ---------
 
-	-1 : Si l'on souhaite afficher le r�sultat en colonne
+	-1 : Si l'on souhaite afficher le résultat en colonne
 
-	-F : rajoute un indicateur � la fin du nom du fichier/dossier pour donner une indication sur son type
+	-F : rajoute un indicateur é la fin du nom du fichier/dossier pour donner une indication sur son type
 exemple : si on a mongoDB@, il s'agit d'un lien symbolique.
 	  si on a Documents/, il s'agit d'un dossier
-	  si on a mongoDB*, il s'agit d'un fichier ex�cutable
+	  si on a mongoDB*, il s'agit d'un fichier exécutable
 
 	-s : donne la taille du fichier
 
 	-L : S'utilise avec des liens symboliques
-Permet de r�cup�rer les informations concernant le fichier vers lequel pointe le lien symbolique
+Permet de récupérer les informations concernant le fichier vers lequel pointe le lien symbolique
 
 
-Creation de liens symboliques
------------------------------
+Les liens sous linux
+--------------------
+Un fichier est défini entre autres par son nom et son contenu (appelé "inode").
+Il existe deux types de liens vers des fichiers:
 
+	Les liens physiques
+	---------------------
+		Il permettent de créer deux fichiers de noms différents mais de même inode (donc ayant le même contenu).
+Ils peuvent s'avérer utiles lorsque deux programmes doivent utiliser le même fichier.
+Egalement, lorsque l'on modifie le contenu d'un fichier, tous les fichiers possédant le même inode (étant donc liés par un lien physique) seront automatiquement modifiés.
+
+Créer un lien physique :
+	ln nameFile nameNewLinkFile
+
+	Les liens symboliques
+	---------------------
+		Les liens symboliques sous linux sont comme des "raccourcis" sous windows. 
+Ils permettent d'accéder plus rapidement à un fichier. Ils nous évitent d'avoir à réécrire toujours le même lien vers un fichier, parfois long.
+
+Créer un lien symbolique :
 	ln -s /path/to/file /path/to/symlink
+
 exemple :
 
 	Home: ~>ln -s Documents/Images img 
-	va cr�er un fichier img sur Home.
+	va créer un fichier img sur Home. lien symbolique de Home.
