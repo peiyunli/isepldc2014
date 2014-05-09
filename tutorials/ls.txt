@@ -1,3 +1,6 @@
+# bzg: This needs to be translated.
+# bzg: Also the formatting could be improved.
+
 Tutoriel sur la commande "ls" et les liens sous linux
 ------------------------------------------------------
 
