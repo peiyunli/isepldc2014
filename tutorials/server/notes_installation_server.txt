@@ -1,1 +1,6 @@
 # bzg: Thierry: ajout ici des notes sur ce que tu as installé sur le serveur.
+-> Install nano : apt-get install nano
+-> Install lamp : sudo apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql
+-> Add new User : adduser <Username>
+-> Add Sudoers   : you must modify /etc/sudoers with "vi"
+-> Change User <Username> password : passwd <Username>
