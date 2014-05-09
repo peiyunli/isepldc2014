@@ -1,20 +1,21 @@
 ping
 
-ping allows you to ping a remote machine, generally to check if the machine is
-still alive.
+ping allows you to ping a remote machine, generally to check if the
+machine is still alive.
 
-ping on google : 
+For example, let's use ping on google : 
 
 ping 8.8.8.8
 
-if the command works, you'll have some informations like the time of response.
-With it you can know if there is some latency for example.
+# bzg: is 8.8.8.8 the IP address of google?!
 
+If the command works, you'll have some informations like the time of
+response.  With it you can know if there is some latency for example.
 
-if you want to ping with a defined interval, you can use the flag -i : 
+If you want to ping with a defined interval, you can use the flag -i : 
 
-example : 
+Example : 
 
 ping -i 5 8.8.8.8
 
-ping google every 5s.
+This will ping the google server every 5s.
