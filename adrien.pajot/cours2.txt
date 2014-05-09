@@ -3,9 +3,9 @@ USING THE TAR COMMAND TO MANAGE ARCHIVES
 
 COMPRESSING => c
 
-c – create a new archive
-v – verbosely list files which are processed.
-f – following is the archive file name
+c : create a new archive
+v : verbosely list files which are processed.
+f : following is the archive file name
 
 example : tar cvf myFile.tar /home/user/randomDir
 
@@ -18,9 +18,9 @@ j for bzip2
 
 EXTRACTING => x
 
-x – extract files from archive
-v – verbosely list files which are processed.
-f – following is the archive file name
+x : extract files from archive
+v : verbosely list files which are processed.
+f : following is the archive file name
 
 example : tar xvf archive_name.tar
 
