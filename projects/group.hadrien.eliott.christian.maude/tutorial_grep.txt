@@ -1,4 +1,4 @@
-Tutorial for the command grep
+tutorial for the command grep
 -------------------------------
 It looks for specified patterns in the tracked files in the work tree, blobs registered in the index file, or blobs in given tree objects. 
 
@@ -50,11 +50,19 @@ Using -v will print every words except myword
     Syntax: grep -c "pattern" filename
     It counts how many lines mathces the given "pattern".
      
- 10) Using grep -V to know the version of the file
+ 10)Displaying the lines since a line with a specific word
      -------------------------------------------------
-    Syntax: grep -V "file.txt"
+    Syntax: grep -A N “specific_word” file.txt
+It will print the N lines after the match. For an example, if I write grep -A 3 “hello” doc.txt then it will print the line with the matched word “hello” in the document and also the two other lines AFTER this first line printed.
 
 11) Put the results in color 
     -----------------------------------
 Syntax: export GREP_OPTIONS='--color=auto' GREP_COLOR='100;8'
             grep iTx index.html
+
+12)Displaying the lines before a line with a specific word
+  ----------------------------------------------------
+Syntax: grep -B N “specific_word” file.txt
+It will print the N lines before the match. For an example, if I write grep -B 3 “hello” doc.txt then it will print the line with the matched word “hello” in the document and also the two other lines BEFORE this first line printed.
+
+
