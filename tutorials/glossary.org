@@ -1,13 +1,14 @@
 #+TITLE: Glossary of notions to know for the written exams
 
-* Unix
-* BSD
-* License
-* "Cloud"
+* Unix / BSD
+* (Free) Licenses
+* Shell / Terminal
+* Cloud / SaaS PaaS IaaS
+** "Cloud"
 
 ...
 
-* SaaS
+** SaaS
 
 Le SaaS est la couche finale du Cloud, la plus aboutie et la plus
 simple à appréhender pour l’internaute. Elle permet à l’utilisateur
@@ -16,16 +17,17 @@ hébergées sur un environnement sécurisé (il lui suffit de se connecter
 avec ses identifiants via une interface). L’entreprise consomme alors
 ses applications à la demande, en fonction de ses besoins réels.
 
-* PaaS
+** PaaS
 
 Le PaaS est un modèle qui se « pose » sur le IaaS. Il permet
 d’externaliser l’infrastructure matérielle, mais également des
 applications middleware : bases de données, couches d’intégration de
 données et environnements de développement des applications.
 
-* IaaS
+** IaaS
 
 Dans l’IaaS, seule l’infrastructure matérielle (hardware) est
 dématérialisée. C’est par exemple le stockage de données pour des
 raisons de sauvegarde qui est fait par les entreprises qui souhaitent
 ne pas avoir qu’en interne les données.
+
