@@ -1,0 +1,40 @@
+Mount
+
+When you plug an extern device to the system, it is located somewhere
+in the system, for example : /dev/fd0
+and you can't access to its datas.
+
+Mount allows you to define a folder that will contain the content of the extern device.
+By default, mount will try to guess the filesystem type of your device
+
+mount devicePath pathYouWant
+
+mount /dev/fd0 /media/myDevice
+
+
+If the filesystem type is not a standart, you must precise it.
+
+mount -t type devicePath pathYouWant
+
+mount -t vfat /dev/fd0 /media/myDevice
+
+
+After you mounted your device, if you want to change the directory, you can use the option --move or -M
+
+mount -M previousDirectory newDirectory
+
+mount --move /media/myDevice /media/newDirForMyDevice
+
+
+If you want you device to be in read-only, to be safer use the option -r
+
+mount -r devicePath pathYouWant
+
+mount -r /dev/fd0 /media/myDevice
+
+
+If you want your device to be accessible from multiple path, use the option -B or --bind
+
+mount -B previousDirectory newDirectory
+
+mount --bind /media/myDevice /media/otherDirForMyDevice
