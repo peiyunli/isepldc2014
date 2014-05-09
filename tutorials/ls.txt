@@ -1,25 +1,24 @@
 Tutoriel sur la commande "ls" et les liens sous linux
 ------------------------------------------------------
 
-La commande ls permet d'afficher les sous r�pertoires et fichiers pr�sents dans le r�pertoire actuel. 
-exemple :
-		Home: ~>ls
-			bureau  musiques  vid�os  images  mongoDB
+La commande ls permet d'afficher les sous répertoires et fichiers
+présents dans le répertoire actuel.  exemple : Home: ~>ls bureau
+musiques vidéos images mongoDB
 
 Les flags
 ---------
 
-	-1 : Si l'on souhaite afficher le r�sultat en colonne
+	-1 : Si l'on souhaite afficher le résultat en colonne
 
-	-F : rajoute un indicateur � la fin du nom du fichier/dossier pour donner une indication sur son type
+	-F : rajoute un indicateur é la fin du nom du fichier/dossier pour donner une indication sur son type
 exemple : si on a mongoDB@, il s'agit d'un lien symbolique.
 	  si on a Documents/, il s'agit d'un dossier
-	  si on a mongoDB*, il s'agit d'un fichier ex�cutable
+	  si on a mongoDB*, il s'agit d'un fichier exécutable
 
 	-s : donne la taille du fichier
 
 	-L : S'utilise avec des liens symboliques
-Permet de r�cup�rer les informations concernant le fichier vers lequel pointe le lien symbolique
+Permet de récupérer les informations concernant le fichier vers lequel pointe le lien symbolique
 
 
 Les liens sous linux
@@ -47,4 +46,4 @@ Créer un lien symbolique :
 exemple :
 
 	Home: ~>ln -s Documents/Images img 
-	va cr�er un fichier img sur Home. lien symbolique de Home.
+	va créer un fichier img sur Home. lien symbolique de Home.
