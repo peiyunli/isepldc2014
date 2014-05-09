@@ -15,4 +15,8 @@ ensuite pour l'utiliser.
 On crée un lien symbolique vers curl pour l'utiliser
 
 
-On configure le PATH grace à setPATH = %PATH%;path_du_dossier_dans_lequel_est_le_fichier
+On configure le PATH grace à set PATH = %PATH%:path_du_dossier_dans_lequel_est_le_fichier
+
+Exemple d'utilisation :
+
+curl https://www.google.com
