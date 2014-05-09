@@ -9,3 +9,5 @@ ls *.{avi,mkv,mp4} > ../result.txt
 ls *.mp4 *.mp3 *.exe
 
 lien symbolique?
+Examen: You are the CEO of a new start-up, what solutions do you have to host a website?
+
