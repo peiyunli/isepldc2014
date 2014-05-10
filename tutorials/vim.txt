@@ -6,14 +6,14 @@ vim is a popular and powerful editor in command line.
 
 =====================================================================
 
-			     To create a new file
-			     -------------------------
+			To create a new file
+			--------------------
 vim file.sh
 
 =====================================================================
 
-			      To edit the new file
-			      -------------------------
+			To edit the new file
+			--------------------
 
 Once you have created the file, it will open automatically.
 To edit it : press "i"
@@ -24,9 +24,9 @@ To force the exit when you want to quit a file containing unsaved changes : type
 
 =====================================================================
 	
-			     Set rights for the new file
-			     ---------------------------------
+			Set rights for the new file
+			---------------------------
 
 Once you have closed the editor, you can set the rights for the file : 
-							chmod +x file.sh
+									chmod +x file.sh
 See chmod tutorial for more details.
