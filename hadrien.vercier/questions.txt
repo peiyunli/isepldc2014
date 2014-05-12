@@ -1,6 +1,20 @@
 Questions 
 
-- Can we do function ? 
+- Can we do functions ? 
+Yes we can !
+i.e :
+function function_A {
+        echo $1
+}
 - How to pass arguments to the bash script?
++ We can use predefined variables to acess passed arguments
+and echo arguments to the shell
+i.e : echo $1 $2 $3
+We can also store arguments from bash command line in special array args=("$@")
+i.e : echo ${args[0]} ${args[1]} ${args[2]}
 - Why !/bin/bash ?
++ It tell the  system to use the program bash to execute the file
 - What are the differences between single quote and double quote ?
+Single quotes will suppress special meaning of every meta characters i.e : echo '$BASH_VAR  -> "$BASH_VAR"' 
+Whereas double quotes keep the meaning of $, \ and '
+i.e :BASH_VAR="Bash Script";echo $BASH_VAR; -> "Bash Script"
