@@ -1,0 +1,6 @@
+Questions 
+
+- Can we do function ? 
+- How to pass arguments to the bash script?
+- Why !/bin/bash ?
+- What are the differences between single quote and double quote ?
