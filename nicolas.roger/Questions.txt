@@ -1,0 +1,17 @@
+comment stocker des variables:
+
+STR="Hello World!"
+echo   
+
+
+créer un fichier de log d'erreur
+
+touch errors.log || exit
+
+$STR 2> grep-errors.txt
+
+
+
+utiliser une variable
+
+$STR 
