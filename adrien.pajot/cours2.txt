@@ -1,0 +1,38 @@
+USING THE TAR COMMAND TO MANAGE ARCHIVES
+
+
+COMPRESSING => c
+
+c : create a new archive
+v : verbosely list files which are processed.
+f : following is the archive file name
+
+example : tar cvf myFile.tar /home/user/randomDir
+
+will put all the folder randomDir in a myFile.tar
+!! This will not compress just "compact" into one file the folder !!
+
+If you want to use a compression you will need to add the compression type : 
+z for gzip
+j for bzip2
+
+EXTRACTING => x
+
+x : extract files from archive
+v : verbosely list files which are processed.
+f : following is the archive file name
+
+example : tar xvf archive_name.tar
+
+will extract the archive into the current folder
+If you want to specify the folder add -C /home/user/yourSpecificFolder
+
+Same as before you will need to specify the compression kind if the archive is compressed
+
+example : tar xvfz myArchive.tar.gz
+
+LISTING
+
+Same as before but instead of x/c you user t
+
+example : tar tvfz myArchive.tar.gz

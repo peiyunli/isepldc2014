@@ -1,0 +1,22 @@
+﻿// METTRE CURL DANS LES SOURCES SANS AVOIR A L'INSTALLER
+
+Problème : sur les machines de l'école, on a pas les droits root pour installer un nouveau programme, donc il faut qu'on le compile sans l'installer
+
+télécharger curl.tar.gz
+
+
+gzip -dc < nom_du_fichier.tar.gz|tar -xf - // pour "dézipper" le fichier
+cd nom_du_fichier.gz.tar // pour accéder au contenu
+
+./configure --prefix=:usr
+make //pour créer l'exécutable, pour compiler
+
+ensuite pour l'utiliser.
+On crée un lien symbolique vers curl pour l'utiliser
+
+
+On configure le PATH grace à set PATH = %PATH%:path_du_dossier_dans_lequel_est_le_fichier
+
+Exemple d'utilisation :
+
+curl https://www.google.com
