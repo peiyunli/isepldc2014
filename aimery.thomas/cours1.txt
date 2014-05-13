@@ -1,0 +1,6 @@
+What did I learn today?
+
+To delete a folder, write: rm -rf name_of_your_folder
+To create a file, write: touch name_of_your_file
+
+
