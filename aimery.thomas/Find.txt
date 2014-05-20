@@ -27,6 +27,11 @@ If you want to find all files that don't contain a specific string of characters
 If you want to find all file last accessed n minutes ago, you can use:
 	find -type f -and -amin n
 
+If you want to find a file with a specific permission you can use:
+
+	find -perm 'permission in bits'
+
+
 
 	
 
