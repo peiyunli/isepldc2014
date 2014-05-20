@@ -1,5 +1,4 @@
-# bzg: Titre?
-# bzg: instruction pour ceux qui se connectent pour la première fois
+Titre: Init Linux web server
 
 -> Install nano : apt-get install nano
 -> Install lamp : sudo apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql

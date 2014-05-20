@@ -1,1 +1,0 @@
-find -iname *.mp4 -o -iname *.avi -o -iname *.mkv
