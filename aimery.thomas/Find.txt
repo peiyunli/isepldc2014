@@ -24,5 +24,9 @@ If you want to find all files that don't contain a specific string of characters
 
 	find ! -name "*test*" -> this command will return all files that do not contain 'test'
 
+If you want to find all file last accessed n minutes ago, you can use:
+	find -type f -and -amin n
+
+
 	
 
