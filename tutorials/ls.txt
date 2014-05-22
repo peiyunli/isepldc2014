@@ -1,6 +1,71 @@
-# bzg: This needs to be translated.
-# bzg: Also the formatting could be improved.
+﻿				==============================================
+						"ls" COMMAND
+				==============================================
 
+<<<<<<< HEAD
+ The ls command is used to display files and subdirectories which are in the current directory
+ Example : 
+ 		Home: ~>ls desktop
+ result :
+ 		Documents Music Videos Images mongoDB
+  
+ 
+ =========================================================================================================
+
+ 						Some flags
+ 						--------------
+ 							
+ 	-1 : displays result in columns
+
+ 	-F : add an indicator at the end of the file/folder name to give more information about its type
+Example : mongoDB@ is a symbolic link.
+ 	  Documents/ is a folder.
+ 	  mongoDB* is an executable file.
+  
+	-s : shows the file's size
+
+	-L : only used with symbolic links.
+Used to show informations about the file which is pointed by the symbolic link.
+  
+=========================================================================================================
+
+  	
+				==============================================
+						LINKS ON LINUX
+				==============================================
+  
+A file is defined among others by its name and its content (called "inode").
+Two type of links between files can be found.
+
+=========================================================================================================
+
+						Hard links
+ 						-------------
+
+Allow you to have two files with a different name but the same inode (so the same content).
+This can be usefull when two programs have to use a same file.
+
+When the content of a file is modified every file with the same inode will be modified too.
+
+To create a hard link :
+				ln nameFile nameNewLinkFile
+
+=========================================================================================================
+
+						Symbolic links
+						 -----------------
+						
+Symbolic links can be compared to shortcuts on windows.
+By this way, it can be quicker to access a file.
+It avoids us to always rewrite the same path to a file which can be sometimes quite imposing.
+
+To create a symbolic link :
+				ln -s /path/to/file /path/to/symlink
+
+Example :
+
+Home: ~>ln -s Documents/Images img   :   will create an "img" folder on "Home, symbolic link of the Images folder.
+=======
 				==============================================
 						"ls" COMMAND
 				==============================================
@@ -68,3 +133,4 @@ Example :
 
 Home: ~>ln -s Documents/Images img   :   will create an "img" folder on "Home, symbolic link of the Images folder.
 
+>>>>>>> 06e96ed4fc23b25c954a5826ae57dbaee451cf00

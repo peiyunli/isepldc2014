@@ -1,0 +1,43 @@
+indentation et syntaxe boucle
+
+for i
+do
+  echo $i
+  echo "Passage a l'argument suivant ..."
+done
+
+if [ CDT ]
+  then
+    echo "/var/log/messages exists."
+fi
+
+concatnation string and number : 1+1 => 2 // 11
+
+conc
+a='1'
+b='1'
+c=$a$b
+echo $c 
+=> 11
+
+ADDTION
+a='1'
+b='1'
+let "c = $a + $b"
+echo $c 
+
+equivalent du php preg_match() ?
+
+files="*.jpg"
+regex="[0-9]+_([a-z]+)_[0-9a-z]*"
+[[ $f =~ $regex ]]
+name="${BASH_REMATCH[1]}"
+echo "${name}.jpg"    # concatenate strings
+name="${name}.jpg"    # same thing stored in a variable
+done
+Edit: It's better to put the regex in a variable. Some patterns won't work if included literally.
+
+This uses  =~ which is Bash's regex match operator. The results of the match are saved to an array called $BASH_REMATCH. The first capture group is stored in index 1, the second (if any) in index 2, etc. Index zero is the full match.
+
+a='name:lalaname:lili';echo $a;regex='name';[[ $a =~ $regex ]];
+
