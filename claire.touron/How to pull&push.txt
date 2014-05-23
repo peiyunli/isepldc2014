@@ -1,0 +1,24 @@
+How to pull and push?
+
+Pull:
+git pull
+
+Push:
+
+Before pushing always:
+git pull 
+
+then to show the modif
+git status 
+
+to add all files
+git add -A
+
+to commit with comment
+git commit -m
+
+to push 
+git push
+
+(if your not admin
+git pull request)
