@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROOT="/var/www/isepldc2014/projet/film/"
+ROOT="/var/www/isepldc2014/projects/film/"
 FILE_PATH=$ROOT"files/";
 FILE_DATE="release-dates.list";
 FILE_RATING="ratings.list";
