@@ -1,0 +1,52 @@
+================================================
+TUTORIAL SUR LA COMMANDE CHMOD
+================================================
+
+=> Permet d'éditer les droits sur un fichier/dossier (en ajouter ou en enlever)
+
+=> droits possibles : 
+	*Lecture
+	*Ecriture
+	*Execution
+
+=> Pour connaitre les droits actuels du fichier/dossier : 
+	Se mettre dans le dossier père et effectuer la ligne de commande suivante : 
+		ls -la
+
+=> Deux types de méthode pour éditer les droits : 
+	*Permissions avec les chiffres
+	*Permissions avec les lettres
+
+=> Permissions avec les chiffres
+	*4 : droit de lecture
+	 2 : droit d'écriture
+	 1 : droit d'exécution
+	*but : additionner les chiffres
+	 exemple : droit de lecture et d'exéction : 4 + 2 = 6
+		   tous les droits : 4 + 2 + 1 = 7
+	 On réalise trois additions pour avoir trois chiffres : 
+		*premier chiffre correspond à l'utilisateurs
+		*deuxieme chiffre correspond au groupe
+		*troisieme chiffre correspond aux autres utilisateurs
+	exemple : donner tous les droits à l'utilisateur, le droit d'exécution au groupe et rien aux autres utilisateurs :
+	chmod 710 /fichier
+	chmod -R /dossier (pour un dossier on doit ajouter -R)
+
+=> Permissions avec les lettres
+	*r : read
+	*w : write
+	*x : execute
+	Cible : on précise la cible de la modification de permissions :
+		*u : utilisateur 
+		*g : groupe
+		*a : tout le monde
+	si on ajoute des droits : + 
+	si on en enlève : -
+	pour ajouter des droits de lecture et d'exécution : +rx
+	pour enlever des droits d'execution et d'écriture : -xw
+	Exemple : Pour ajouter des droits de lecture + écriture à l'utilisateur pour un dossier : 
+		chmod -R u+rw /dossier
+
+		Pour enlever des droits d'exécution à tout le monde pour un fichier : 
+		chmod a-x /fichier
+
