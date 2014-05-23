@@ -49,12 +49,12 @@ Comment parser du HTML ?
 ------------------------------------------------------------------------
 Comment se connecter à une API ? Envoyer sa clé privée ? (Curl ? Exemples ?)
 
+------------------------------------------------------------------------
+Comment créer et exécuter un script ?
+
 vim script.sh
 chmod +x script.sh
 ./script.sh
-
-------------------------------------------------------------------------
-Comment créer et exécuter un script ?
 
 ------------------------------------------------------------------------
 Comment echo des strings avec des " ou des ; ?
@@ -63,3 +63,10 @@ Echaper les apostrophes, osef du ; si c'est entre "
 
 ------------------------------------------------------------------------
 Comment récupérer une valeur entrée par l'utilisateur ?
+
+$ read a
+toto
+$ echo $a
+toto
+
+Stock la valeur entrée par l'utilisateur dans la variable a
