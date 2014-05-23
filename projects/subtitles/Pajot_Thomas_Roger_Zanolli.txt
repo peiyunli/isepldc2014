@@ -1,0 +1,15 @@
+Récupérer les sous-titres à partir du nom de fichier
+
+Dossier avec plusieurs séries (.mkv)
+
+modifier nom du fichier pour le normaliser, ou avoir plusieurs noms
+
+wget pesistream.tk/subs?path=/etc/downloads
+
+récupérer tous les noms de fichiers
+
+faire une requête sur addicted pour récupérer le fichier
+
+parser les réponses
+
+copier les sous titres dans le dossier

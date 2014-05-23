@@ -1,0 +1,32 @@
+			====================
+				VIM
+			====================
+
+vim is a popular and powerful editor in command line.
+
+=====================================================================
+
+			To create a new file
+			--------------------
+vim file.sh
+
+=====================================================================
+
+			To edit the new file
+			--------------------
+
+Once you have created the file, it will open automatically.
+To edit it : press "i"
+To save it : type ":w" and enter
+To exit : type ":q" and enter
+To save and exit : type ":wq" and enter
+To force the exit when you want to quit a file containing unsaved changes : type ":q! " and enter
+
+=====================================================================
+	
+			Set rights for the new file
+			---------------------------
+
+Once you have closed the editor, you can set the rights for the file : 
+									chmod +x file.sh
+See chmod tutorial for more details.

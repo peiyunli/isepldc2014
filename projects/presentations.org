@@ -1,0 +1,46 @@
+* SoundCloud
+
+Name of the project:
+
+Goal: implement hashtag search for Soundcloud.
+
+Problems: what API ?  What user interface ?
+
+* Lafourchette
+
+Name of the project:
+
+Goal: let users get information for cheap and good restanrants in the
+neighborhood.
+
+Problems: 
+
+- How to get the data from Lafourchette?
+- How to structure the text database with data from Lafourchette?
+- How to process and analyze emails?
+
+* TwitterFight
+
+Name of the project:
+
+Goal: un TwitterFight
+
+- How to retrieve the data?
+- What user interface?
+
+* Allociné
+
+Name of the project:
+
+Goal: what is the best movie now, and where are the movie theaters
+that play this movie around here?
+
+- What API for Allocine?
+
+* Getting the right subtitle
+
+Name of the project:
+
+Goal: Make it easier to download the correct subtitle file for a given
+vidéo.
+

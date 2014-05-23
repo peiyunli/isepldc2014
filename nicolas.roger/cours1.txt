@@ -1,4 +1,4 @@
-commande ping :
+ping
 
 ping allows you to ping a remote machine, generally to check if the machine is
 still alive.
