@@ -1,0 +1,7 @@
+1) Le shell désigne le programme qui interprète les commandes, et par extension le langage associé. Bash est un shell. Le shell standard est sh. bash est un surensembles de sh.
+Pour connaitre son type de shell, il faut entrer "echo $SHELL"
+exemple : sous ubuntu : /bin/bash
+
+2) Une commande externe est une commande dont le code se trouve dans un fichier ordinaire. Le shell crée un processus pour exécuter une commande externe. 
+La localisation du code d'une commande externe doit être connue du shell pour qu'il puisse exécuter cette commande.
+Par ailleurs, pour connaitre le type d'une commande, il faut entrer en ligne de commande : type <nom commande>

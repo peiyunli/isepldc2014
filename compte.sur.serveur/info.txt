@@ -1,0 +1,5 @@
+Pour que vous inscrire, créer de le dossier /compte.serveur/un fichier de type
+nom.prenom.votrelogin.txt et copier votre clé public à l'intérieur et votre email & wait.
+
+Pour vous connecter: 
+ssh <username>@146.185.131.48
