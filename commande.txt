@@ -1,0 +1,8 @@
+Test Toscan
+ Exemple ligne de commande
+
+---- TUTORIEL-------
+
+ls : pour voir ce qu'il y a dans le dossier ou on est
+cd: change directory-> aller dans une endroit specifique
+cd.. revenir dans le dossier précédent
