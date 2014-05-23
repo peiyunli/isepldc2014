@@ -39,7 +39,7 @@ do
 
 			if [ $found == "true" ]; then
 				echo "$referer"
-				wget -O "$subName" --referer="$referer" "$downloadLink"
+				wget -O "$path"/"$subName" --referer="$referer" "$downloadLink"
 			else
 				echo "ERREUR: "
 				echo $found
