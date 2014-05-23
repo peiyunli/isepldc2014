@@ -1,0 +1,19 @@
+un script: un fichier contenant une ou plusieurs commandes qui seront exécutées de manière séquentielle.
+
+EXÉCUTER un script
+--dans un terminal
+bash nom_du_script 
+chmod +x nom_du_script -> ./nom_du_script
+sh nom_du_script (La commande sh est en fait un lien symbolique vers l'interpréteur de commandes par défaut : /bin/dash.) 
+
+types de shells
+
+    dash : shell par défaut utilisé pour exécuter les scripts sur Ubuntu ;
+    bash (Bourne Again SHell) : conçu par le projet GNU, shell linux ; le shell par défaut sur Ubuntu ;
+    rbash : un shell restreint basé sur bash. Il existe de nombreuses variantes de bash ;
+    csh, tcsh : shells C, créés par Bill Joy de Berkeley ;
+    zsh, shell C écrit par Paul Falstad ;
+    ksh (⇔ ksh88 sur Solaris et equivaut a ksh93 sur les autres UNIX/Linux cf.Korn shell History): shells korn écrits par David Korn, pdksh (Public Domain Korn Shell ⇔ ksh88) ;
+    rc : shell C, lui aussi conçu par le projet GNU ;
+    tclsh : shell utilisant Tcl ;
+    wish : shell utilisant Tk ;
