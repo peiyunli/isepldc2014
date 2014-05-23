@@ -1,1 +1,6 @@
-Qui est Shell??
+1.	Sed ?
+C’est un éditeur de flux. Avant de commencer à apprendre la commande Sed il vaut mieux s’y connaître en Regex.
+Il existe deux méthodes afin d’utiliser Sed :
+- Classique avec un fichier en entrée qui donne un fichier en sortie
+- Direct avec l’option -i qui applique directement la commande sur le fichier en entrée.
+Si nous utilisons la commande Sed (c’est à dire ‘’)seule sur un fichier alors il renvoie l’ensemble du document.
