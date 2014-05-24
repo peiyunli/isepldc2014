@@ -1,1 +1,20 @@
-//claire//
+//List of command lines//
+
+répertoire courant = celui où l'on "est"
+
+ls --> permet de lister le contenu d'un dossier
+pwd --> permet d'afficher le répertoire courant
+
+cd --> "change directory" pour changer de repertoire  courant
+cd .. --> permet de remonter d'un niveau dans l'arborescence des repertoires
+cd/ --> revenir à la racine des dossier
+
+mv "fichier" "lieu de depot"  --> pour bouger un fichier d'un endroit à un autre
+
+rm fichier --> supprimer un fichier
+
+
+clear (ou ctrl+L) --> remettre à vide la console
+
+
+	

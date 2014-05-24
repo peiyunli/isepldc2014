@@ -4,3 +4,7 @@ Comment déplacer un fichier d'un dossier à un autre? : mv name1 folderPath/
 
 Comment démarrer Git Bash dans un répertoire spécifique? : En attente...
 
+How to list all lines of a file?
+
+	Use cat 'nameofthefile'
+

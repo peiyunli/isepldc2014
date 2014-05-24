@@ -1,0 +1,195 @@
+linux commands
+
+
+ls command lists the files and directories under current working directory.
+ls [OPTIONS]... [FILE]
+-l      Lists all the files, directories and their mode, Number of links, owner of the file, file size, Modified date and time and filename. 
+-t      Lists in order of last modification time. 
+-a  	Lists all entries including hidden files. 
+-d  	Lists directory files instead of contents.
+-p  	Puts slash at the end of each directories. 
+-u 		List in order of last access time.
+-i  	Display inode information. 
+-Iter  	List files order by date. 
+-ISr  	List files order by file size.
+
+
+less command is used to display text in the terminal screen. It just prints the text in the given file, you cannot edit or manipulate the text here. To display the file from the specified line, enter the line number followed by colon(:). It allows Forward and backward movement in the file.
+less [options] filename
+-c  	Clear screen before displaying.
++n 		Starts up the file from the given number.
+:p  	Examine the pervious file in the command line list.
+:d  	Remove the current file from the list of files.
+
+
+head command is used to display the first ten lines of a file, and also specifies how many lines to display.
+head [options] filename
+-n 		To specify how many lines you want to display.
+-n number The number option-argument must be a decimal integer whose sign affects the location in the file, measured in lines.
+-c number The number option-argument must be a decimal integer whose sign affects the location in the file, measured in bytes.
+
+
+tail command is used to display the last or bottom part of the file. By default it displays last 10 lines of a file.
+tail [options] filename
+-l  	To specify the units of lines.
+-b  	To specify the units of blocks.
+-n  	To specify how many lines you want to display.
+-c number  	The number option-argument must be a decimal integer whose sign affects the location in the file, measured in bytes.
+-n number  	The number option-argument must be a decimal integer whose sign affects the location in the file, measured in lines.
+
+
+chmod command allows you to alter / Change access rights to files and directories.
+chmod [options] [MODE] FileName
+0 		none 
+1 		execute only 
+2 		write only 
+3 		write and execute 
+4 		read only 
+5 		read and execute 
+6 		read and write 
+7 		set all permissions
+
+-c  	Displays names of only those files whose permissions are being changed
+-f  	Suppress most error messages
+-R  	Change files and directories recursively 
+-v      Output version information and exit. 
+
+
+chown command is used to change the owner / user of the file or directory. This is an admin command, root user only can change the owner of a file or directory.
+chown [options] newowner filename/directoryname
+-R  	Change the permission on files that are in the subdirectories of the directory that you are currently in.
+-c 		Change the permission for each file. 
+-f  	Prevents chown from displaying error messages when it is unable to change the ownership of a file. 
+
+
+find command finds one or more files assuming that you know their approximate filenames.
+find path [options]
+-name  		It search for the given file, in the current directory or any other subdirectory.
+-atime n  	True if the file was accessed n days ago. The access time of directories in path is changed by find itself.
+-ctime n 	True if the file's status was changed n days ago.
+-group gname True if the file belongs to the group gname. If gname is numeric and does not appear in the /etc/group file, it is taken as a group ID. 
+-mtime n  	True if the file's data was modified n days ago. 
+-size n[c]  True if the file is n blocks long (512 bytes per block). If n is followed by a c, the size is in bytes.
+
+
+mkdir command is used to create one or more directories.
+mkdir [options] directories
+-m  	Set the access mode for the new directories.
+-p  	Create intervening parent directories if they don't exist.
+-v  	Print help message for each directory created.
+
+
+cp command copy files from one location to another. If the destination is an existing file, then the file is overwritten; if the destination is an existing directory, the file is copied into the directory (the directory is not overwritten).
+cp [OPTIONS]... SOURCE DEST
+cp [OPTIONS]... SOURCE... DIRECTORY
+cp [OPTIONS]... --target-directory=DIRECTORY SOURCE... 
+-a  	same as -dpR.
+--backup[=CONTROL]  	make a backup of each existing destination file
+-b  	like --backup but does not accept an argument. 
+-f 		if an existing destination file cannot be opened, remove it and try again. 
+-p  	same as --preserve=mode,ownership,timestamps.
+--preserve[=ATTR_LIST] preserve the specified attributes (default: mode,ownership,timestamps) and security contexts, if possible additional attributes: links, all. 
+--no-preserve=ATTR_LIST  	don't preserve the specified attribute.
+--parents append source path to DIRECTORY. 
+
+
+mv command which is short for move. It is used to move/rename file from one directory to another. mv command is different from cp command as it completely removes the file from the source and moves to the directory specified, where cp command just copies the content from one file to another.
+mv [-f] [-i] oldname newname
+-f 		This will not prompt before overwriting (equivalent to --reply=yes). mv -f will move the file(s) without prompting even if it is writing over an existing target.
+-i  	Prompts before overwriting another file.
+
+
+rm linux command is used to remove/delete the file from the directory. 
+rm [options..] [file | directory]
+-f  	Remove all files in a directory without prompting the user. 
+-i 		Interactive. With this option, rm prompts for confirmation before removing any files. 
+-r (or) -R  	Recursively remove directories and subdirectories in the argument list. The directory will be emptied of files and removed. The user is normally prompted for removal of any write-protected files which the directory contains. 
+
+
+tar command is used to create archive and extract the archive files.
+tar [options] [archive-file] [File or directory to be archived]
+-c  	Creates Archive
+-x  	Extract the archive
+-f  	creates archive with give filename
+-t  	displays or lists files in archived file
+-u 		archives and adds to an existing archive file
+-v 		Displays Verbose Information
+-A 		Concatenates the archive files
+
+
+cat linux command concatenates files and print it on the standard output.
+cat [OPTIONS] [FILE]...
+-A 		Show all.
+-b 		Omits line numbers for blank space in the output.
+-e 		A $ character will be printed at the end of each line prior to a new line.
+-E 		Displays a $ (dollar sign) at the end of each line.
+-n 		Line numbers for all the output lines.
+-s 		If the output has multiple empty lines it replaces it with one empty line.
+-T 		Displays the tab characters in the output.
+-v 		Non-printing characters (with the exception of tabs, new-lines and form-feeds) are printed visibly. 
+
+
+ps command is used to report the process status. ps is the short name for Process Status.
+ps [options]
+-a 	List information about all processes most frequently requested: all those except process group leaders and processes not associated with a terminal..
+-A or e 	List information for all processes.
+-d 	List information about all processes except session leaders.
+-e 	List information about every process now running.
+-f 	Generates a full listing.
+-j 	Print session ID and process group ID.
+-l 	Generate a long listing.
+
+
+mail command is used to send and receive mails locally and globally.
+mail
+-s 	Specify subject on command line.
+-c 	Send carbon copies to list of users.
+-b 	Send blind carbon copies to list. List should be a comma-separated list of names.
+-f 	Read in the contents of your mbox for processing; when you quit, mail writes undeleted messages back to this file.
+-i 	Ignore tty interrupt signals. This is particularly useful when using mail on noisy phone lines.
+
+
+cut command is used to cut out selected fields of each line of a file. The cut command uses delimiters to determine where to split fields.
+cut [options]
+-c 	Specifies character positions.
+-b 	Specifies byte positions.
+-d flags 	Specifies the delimiters and fields.
+
+
+sort command is used to sort the lines in a text file.
+sort [options] filename
+-r 	Sorts in reverse order.
+-u 	If line is duplicated display only once.
+-o filename 	Sends sorted output to a file.
+
+
+uniq cmd is used to remove the duplicate records in directories by comparing the directories. This command can also be used to get the unique words or characters in a sorted file.
+uniq [OPTION]... [INPUT [OUTPUT]]
+-c, --count 	prefix lines by the number of occurrences.
+-d, --repeated 	only print duplicate lines.
+-D 	delimit-method={none(default),prepend,separate} Delimiting is done with blank lines.
+-f, --skip-fields=N 	avoid comparing the first N fields
+-i, --ignore-case 	ignore differences in case when comparing
+-s, --skip-chars=N 	avoid comparing the first N characters
+-u, --unique 	only print unique lines
+--version 	output version information and exit 
+
+
+echo command prints the given input string to standard output.
+echo [options..] [string]
+-n 	do not output the trailing newline
+-e 	enable interpretation of the backslash-escaped characters listed below
+-E 	disable interpretation of those sequences in STRINGs
+
+    Without -E, the following sequences are recognized and interpolated:
+
+\NNN 	the character whose ASCII code is NNN (octal)
+\a 	alert (BEL)
+\\ 	backslash
+\b 	backspace
+\c 	suppress trailing newline
+\f 	form feed
+\n 	new line
+\r 	carriage return
+\t 	horizontal tab
+\v 	vertical tab
