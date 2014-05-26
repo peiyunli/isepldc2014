@@ -1,0 +1,63 @@
+step 1:
+sudo mate /etc/postfix/sasl_passwd
+
+Step 2:
+sudo postmap /etc/postfix/sasl_passwd
+
+Step 3:
+sudo cp /etc/postfix/main.cf /etc/postfix/main.cf.orig
+sudo mate /etc/postfix/main.cf
+
+# Minimum Postfix-specific configurations.
+mydomain_fallback = localhost
+mail_owner = _postfix
+setgid_group = _postdrop
+relayhost=smtp.gmail.com:587
+
+# Enable SASL authentication in the Postfix SMTP client.
+smtp_sasl_auth_enable=yes
+smtp_sasl_password_maps=hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options=
+
+# Enable Transport Layer Security (TLS), i.e. SSL.
+smtp_use_tls=yes
+smtp_tls_security_level=encrypt
+tls_random_source=dev:/dev/urandom
+
+Step 4:
+sudo postfix start
+sudo postfix reload
+
+Step 5:
+date | mail -s test youremailaddress@yourdomain.com
+
+Step 6:
+<key>RunAtLoad</key>
+<true/>
+
+xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>org.postfix.master</string>
+  <key>Program</key>
+  <string>/usr/libexec/postfix/master</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>master</string>
+    <string>-e</string>
+    <string>60</string>
+  </array>
+  <key>QueueDirectories</key>
+  <array>
+    <string>/var/spool/postfix/maildrop</string>
+  </array>
+  <key>AbandonProcessGroup</key>
+  <true/>
+  <key>OnDemand</key>
+  <true/>
+  <key>RunAtLoad</key>
+  <true/>
+</dict>
+</plist>
