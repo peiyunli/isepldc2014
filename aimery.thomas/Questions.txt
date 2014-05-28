@@ -8,3 +8,6 @@ How to list all lines of a file?
 
 	Use cat 'nameofthefile'
 
+How to put a variable in a sed parsing expression?
+
+	sed -e "s/^.*\"$value\"[ ]*:[ ]*\"//" -e 's/".*//'
