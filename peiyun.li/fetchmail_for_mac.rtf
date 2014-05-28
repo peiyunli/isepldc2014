@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg936\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 1. Install MacPorts from\ul  \ulnone http://www.macports.org/install.php (Quickstart - 3.Install MacPorts for your version of OS X: 	\'95OS X 10.9 Mavericks\
+\
+2. Type:         export PATH=/opt/local/bin:$PATH\
+\pard\pardeftab720
+\cf0                      export PATH=/opt/local/sbin:$PATH\
+   in command line.\
+\
+3. Type: sudo port install fetchmail +fetchmailconf +ssl 
+\fs26 \
+\
+
+\fs24 4. After installed: \
+        a.  If you have TextWrangler and have installed the tool of TextWrangler for command line, then         type:   edit .fetchmailrc\
+        b. If you don\'92t have it and don\'92t want to install it, first you should let your computer show hidden files, the find the file .fetchmailrc in /Users/Username/.fetchmailrc\
+\
+5. Anyway after you open the file .fetchmailrc, add the following lines:\
+    set postmaster "peiyunli"\
+    # set polling time (5 minutes)\
+     set daemon 600\
+\
+   poll pop.gmail.com with proto POP3\
+   user 'iosaprojet@gmail.com' there with password 'isepiosa' is peiyunli here options ssl
+\fs26 \
+
+\fs24  \
+   Please change \'93peiyunli\'94 to your user name in your own computer, then save and close it.\
+\
+6. Type: sudo chmod 710 ~/.fetchmailrc\
+\
+7. Type: sudo fetchmail -d0 -vk pop.gmail.com
+\fs26 \
+
+\fs24       to test if it works well.\
+\
+8. If no errors, now you can try to send a e-mail to our mailbox <iosaprojet@gmail.com> \
+    then type: sudo fetchmail\
+     The command line will show the message: \CocoaLigature0 You have mail in /var/mail/username\
+\pard\pardeftab720
+
+\fs22 \cf0 \
+\pard\pardeftab720
+
+\fs24 \cf0 \CocoaLigature1 9. From now on, every e-mail send to the mailbox <iosaprojet@gmail.com>  will be saved \
+automatically in \CocoaLigature0 /var/mail/username.\
+\
+     NOTE: To see this file, you should let the hidden files shown in your computer.\CocoaLigature1 \
+\
+}
