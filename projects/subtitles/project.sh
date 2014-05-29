@@ -1,7 +1,9 @@
 #!/bin/bash
 
 jsonDecode() {
+	#find the ajax value $2 in the ajax response $1
 	ajaxPart=$(echo $1 | sed -e 's/^.*"'$2'":"\([^"]*\)".*$/\1/')
+	#replace the wrong \/ by /
 	ajaxPart=$(echo "$ajaxPart" | sed -e 's/\\\//\//g')
 	echo $ajaxPart
 }
