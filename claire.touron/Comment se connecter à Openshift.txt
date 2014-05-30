@@ -1,4 +1,4 @@
-Comment se connecter à Openshift?
+Comment se connecter à Openshift:
 
 Générer un clé public:
 --> ssh-keygen 
