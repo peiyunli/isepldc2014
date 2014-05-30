@@ -1,0 +1,43 @@
+Command line
+
+
+FionadeMacBook-Air:~ fionawan$ ls
+
+FionadeMacBook-Air:~ fionawan$ cd isepldc2014/
+
+FionadeMacBook-Air:isepldc2014 fionawan$ ls
+
+FionadeMacBook-Air:isepldc2014 fionawan$ cd hong.wan/
+
+FionadeMacBook-Air:hong.wan fionawan$ touch test.txt
+
+FionadeMacBook-Air:hong.wan fionawan$ cd <<>
+
+FionadeMacBook-Air:hong.wan fionawan$ cd ..
+FionadeMacBook-Air:isepldc2014 fionawan$ cd ..
+FionadeMacBook-Air:~ fionawan$ git
+
+FionadeMacBook-Air:~ fionawan$ cd ..
+FionadeMacBook-Air:Users fionawan$ ls
+
+FionadeMacBook-Air:Users fionawan$ cd Wanhong/
+FionadeMacBook-Air:Wanhong fionawan$ ls
+Documents
+FionadeMacBook-Air:Wanhong fionawan$ cd ..
+FionadeMacBook-Air:Users fionawan$ cd fionawan/
+FionadeMacBook-Air:~ fionawan$ cd isepldc2014/
+FionadeMacBook-Air:isepldc2014 fionawan$ git status
+
+FionadeMacBook-Air:isepldc2014 fionawan$ git add *
+FionadeMacBook-Air:isepldc2014 fionawan$ ls
+
+FionadeMacBook-Air:isepldc2014 fionawan$ git commit -m "yeah"
+
+FionadeMacBook-Air:isepldc2014 fionawan$ git log
+
+FionadeMacBook-Air:isepldc2014 fionawan$ git status
+
+FionadeMacBook-Air:isepldc2014 fionawan$ git push
+
+
+
