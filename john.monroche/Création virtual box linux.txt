@@ -1,0 +1,49 @@
+If you want to set a virtual machine, in case you don’t have all the command you need, follow this tutorial.
+
+
+1. Download a, for instance, 32-bit Ubuntu ISO-image from here. Save the ISO file (called ubuntu-X.Y-desktop-386.iso for Ubuntu version X.Y) somewhere on your computer.
+
+2. Download VirtualBox from the VirtualBox Web site.
+Obviously you need to select the version for your own host OS (the guest OS will be Ubuntu Linux)
+
+3. Installed VirtualBox using the easy step-by-step installer
+See the VirtualBox User Manual for all details. (I actually never looked at it since everything is so intuitive.)
+
+4. Start VirtualBox by double-clicking on its icon or whatever you do on your OS to start an installed application.
+
+5. Click on the "New" blue sun-looking icon in the VirtualBox GUI to create a new VM, and start following the instructions. They are very detailed and self-explanatory, but I detail my steps below.
+
+6. Pick a name for your VM (I used something like "Ubuntu_VBox").
+
+7. Select "Linux" and "Ubuntu" for the Operating System and Version menus (the installer is smart enough to do this automatically if your VM name contains the word "ubuntu").
+
+8. On the next panel, select a RAM size for your VM. The default should be fine, but given the RAM size these days you can likely pick 1GiB as opposed to the recommended 512MiB.
+
+9. On the next panel, select the "Create a virtual hard drive now" option.
+
+10. On the next panel ("Hard Drive File Type") you can leave the default setting 
+unchanged.
+
+11. On the next panel, select "Dynamically allocated" (most likely the best choice unless you're after performance).
+
+12. On the next panel, specify where you want the file that contains your new VM's disk space to be located. I always use the default. Hit the "Create" button.
+
+13. Once you've completed the hard disk creation, your VM instance will show up on the left panel of the main VirtualBox window saying "Powered off". The right panel displays information about that instance. Double-click on the VM instance showed on the left panel. This will pop up a window and explains to you about "mouse capture". Essentially, if you click in the running VM window the mouse will be trapped there and you need to hit a key to recover your "real" mouse. Read the instructions in the dialog box, they are very clear.
+
+14. A new panel pops up. Set the path (using the file explorer thingy) to the ISO Ubuntu image file you have downloaded in Step #1. Hit "Start".
+
+15. At this point you're entering the Ubuntu configuration (remember that your mouse may be trapped and released by hitting a key.) You may see some error message about the BIOS, but in fact it's just a warning, so just ignore it. If you've installed Ubuntu before, you now know what to do. If not, continue reading.
+
+16. The instructions below vary with every Ubuntu release, and I am too lazy to update all this.
+
+17. Select the language you want to use and click on "Install Ubuntu". Then, select "Download updates while installing" and click on "Forward".
+
+18. On the next panel, probably a good idea connect to a power source and to enable the download of updates while installing
+
+19. Next, you're asked about partitions. If you know about this, then create whatever partition table you want. If you don't and want to find out, there are many tutorials on-line. Otherwise, you can create a single partition by selecting "Erase and use entire disk".
+
+20. You can now click on "Install Now". This will take a while, but you should see some moving Ubuntu progress bar. Along the way you'll be asked a few easy questions that you have to answer (time zone, keyboard, etc.), as well as your name, hostname, user name, and password. These are for the Ubuntu machine, just like on a real system you'd be installing. Select the security options you want (you can opt out of typing your password, you can encrypt your VM hard disk, etc.). This likely doesn't matter much for the purpose of a course, but it's up to you, especially if you plan on using the VM instance for a wide range of purposes.
+
+21. When all files have been downloaded/installed, which can take a while, you have to click on "Restart Now". You'll have to press enter to answer a question about ejecting a disk at some point (just press Enter) and may seen some cryptic messages that you can ignore most likely.
+
+22. Once the machine has restarted, depending on your choices above you may have to type your username and password. You're now "in" Ubuntu. The Ubuntu interface evolves and changes regularly. The package manager will likely pop up and it's a good idea to update packages. What I typically do then is find a way to start a Terminal (i.e., a Shell), and then I'm golden. In Ubuntu 12.04.3-desktop I did this by clicking on the "Dash Home" button at the top left and searching for the string "Terminal". I then dragged the Terminal icon onto the dock to the left, and off I go.
