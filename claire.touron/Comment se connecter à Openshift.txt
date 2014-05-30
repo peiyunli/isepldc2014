@@ -1,0 +1,11 @@
+Comment se connecter à Openshift?
+
+Générer un clé public:
+--> ssh-keygen 
+Automatiquement dans le repertoire c:/Users/Claire/.ssh
+ne pas mettre de mot de passe (enterx2)
+
+Ensuite rajouter cette clé à github et openshift
+
+Se connecter en ssh:
+ssh username@nomdedomaine.com
