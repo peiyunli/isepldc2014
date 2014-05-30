@@ -1,6 +1,6 @@
 ﻿Comment faire une variable ? (stocker une valeur dans une variable)
 
-message='Bonjour tout le monde'
+$message='Bonjour tout le monde'
 
 Attention à ne pas mettre d'espace autour du =
 Pour l'afficher, on utilise echo $message
