@@ -1,4 +1,4 @@
-Comment se connecter à Openshift:
+Comment se connecter à Openshift ou serveur isep:
 
 Générer un clé public:
 --> ssh-keygen 
@@ -9,3 +9,6 @@ Ensuite rajouter cette clé à github et openshift
 
 Se connecter en ssh:
 ssh username@nomdedomaine.com
+
+Pour se connecter au serveur isep:
+ssh root@146.185.131.48
