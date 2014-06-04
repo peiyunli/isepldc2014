@@ -1,4 +1,4 @@
-Ping un serveur :
+Comment "pinguer" un serveur :
 
 la variable i permet de specifier un intervalle : 
 
