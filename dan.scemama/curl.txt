@@ -1,0 +1,12 @@
+The simplest and most common request/operation made using HTTP is to get a URL. The URL could itself refer to a web page, an image or a file. The client issues a GET request to the server and receives the document it asked for. If you issue the command line
+
+ curl http://curl.haxx.se
+you get a web page returned in your terminal window. The entire HTML document that that URL holds.
+
+All HTTP replies contain a set of response headers that are normally hidden, use curl's --include (-i) option to display them as well as the rest of the document.
+
+3.2 HEAD
+
+You can ask the remote server for ONLY the headers by using the --head (-I) option which will make curl issue a HEAD request. In some special cases servers deny the HEAD method while others still work, which is a particular kind of annoyance.
+
+The HEAD method is defined and made so that the server returns the headers exactly the way it would do for a GET, but without a body. It means that you may see a Content-Length: in the response headers, but there must not be an actual body in the HEAD response.
