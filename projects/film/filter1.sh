@@ -12,7 +12,7 @@ FILE_RATING_TEMP="ratings-temp.list";
 FILE_DATE_PARSED="release-dates-parsed.list";
 FILE_RATING_PARSED="ratings-parsed.list";
 
-MONTH="September";
+MONTH="May";
 YEAR="2014";
 COUNTRY="France";
 
@@ -31,7 +31,7 @@ fi
 
 
 #Get films from 2014 and erase the 2 first column
-sed '/^CRC/,/^MOVIE RATINGS/d' $FILE_PATH$FILE_RATING | sed '/^--/,/^For further/d' | sed -n "/($YEAR)/p" | sed 's/\s\s*/ /g' | cut -d' ' -f3- >$FILE_PATH$FILE_RATING_TEMP;
+sed '/^CRC/,/^MOVIE RATINGS/d' $FILE_PATH$FILE_RATING | sed '/^--/,/^For further/d' | sed -n "/($YEAR)/p" | sed 's/\s\s*/ /g' | cut -d' ' -f4- >$FILE_PATH$FILE_RATING_TEMP;
 
 
 #Get the new film from 2014
