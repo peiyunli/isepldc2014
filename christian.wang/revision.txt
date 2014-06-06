@@ -24,3 +24,10 @@ For example, you need to know
 Public key
 
 You need to know how to create a public key.
+
+* IaaS / PaaS / SaaS and openshift
+
+You need to know the basics about what is SaaS, PaaS and IaaS.
+
+In front of a project, you need to be able to make choices about what
+web service to use and why.
