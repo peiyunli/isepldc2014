@@ -13,3 +13,12 @@ For example, you need to know
 4. how to commit changes locally on your computer : git add -a (option all), then git commit -m "message"
 5. how to push these changes on your github repository : git push
 6. how to send a "pull request" to the repository you forked from : pull request from the website 	https://help.github.com/articles/using-pull-requests
+
+More precisely, you need to know the meaning of these commands
+
+- =git status= affiche l'état du répertoire
+- =git log= permet d'afficher l'historique du projet
+- =git clone= permet de cloner un répertoire personnel
+- =git add= permet d'ajouter un fichier en attente pour commit puis push and =git rm= supprime un fichier
+- =git commit= permet de commit un fichier
+- =git pull and git pull= permet de récupérer les modifs faites
