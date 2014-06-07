@@ -1,0 +1,7 @@
+Il est possible qu'un élève a commit sous différents pseudonymes, différentes adresses email.
+Ce fichier permet de lister les pseudonymes et email utiliés par les élèves sur GitHub.
+
+
+
+Christian Wang
+Pseudo : Chwang1234, Christian
