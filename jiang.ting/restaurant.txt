@@ -1,0 +1,32 @@
+Name:Pierre au Palais Royal; Type of cuisine:french; Adresse:10, rue de Richelieu 75001 Paris
+Name:Thaïm; Type of cuisine:thailandais; Adresse:46, rue de Richelieu 75001 Paris
+Name:Pizza Wawa; Type of cuisine:italien; Adresse:35, rue Saint-Honoré	 75001 Paris
+Name:Opéra Mandarin; Type of cuisine:chinese; Adresse:23, Boulevard des Capucines 75002 Paris
+Name:Le Versance; Type of cuisine:french; Adresse:16, rue Feydeau 75002 Paris
+Name:Le Petit Commines; Type of cuisine:french; Adresse:16, rue Commines 75003 Paris
+Name:Le Petit Dakar; Type of cuisine:african; Adresse:6, rue Elzévir	 75003 Paris
+Name:Monjul; Type of cuisine:french; Adresse:28, rue des Blancs Manteaux 75004 Paris
+Name:Niji Sushi; Type of cuisine:Japonais; Adresse:15, rue des Archives 75004 Paris
+Name:Le Buisson Ardent; Type of cuisine:french; Adresse:25, rue Jussieu 75005 Paris
+Name:El Burro Blanco; Type of cuisine:Espagnol; Adresse:79, rue du Cardinal Lemoine 75005 Paris
+Name:La Bastide d'Opio; Type of cuisine:french; Adresse:9, rue Guisarde 75006 Paris
+Name:Le Souk Saint-Germain; Type of cuisine:Marocain; Adresse:5, rue Bernard Palissy 75006 Paris
+Name:Alain Milliat; Type of cuisine:french; Adresse:159, rue de Grenelle 75007 Paris
+Name:La Grande Cascade; Type of cuisine:french; Adresse:10, rue de Richelieu 75008 Paris
+Name:Le Reminet; Type of cuisine:chinese; Adresse:10, rue de Richelieu 75008 Paris
+Name:Le Quinze Lionel Flury; Type of cuisine:italien; Adresse:10, rue de Richelieu 75009 Paris
+Name:Goumard; Type of cuisine:french; Adresse:10, rue de Richelieu 75009 Paris
+Name:Pietro; Type of cuisine:french; Adresse:10, rue de Richelieu 750010 Paris
+Name:Auberge de Venise; Type of cuisine:chinese; Adresse:10, rue de Richelieu 750010 Paris
+Name:Matsuri Marbeuf; Type of cuisine:french; Adresse:10, rue de Richelieu 750011 Paris
+Name:Matsuri Bac; Type of cuisine:french; Adresse:10, rue de Richelieu 750012 Paris
+Name:Kyo Montparnassel; Type of cuisine:french; Adresse:10, rue de Richelieu 750013 Paris
+Name:Fame da Lupo;Type of cuisine:chinese; Adresse:23, Boulevard des Capucines 750013 Paris
+Name:lcazar Restaurant;Type of cuisine:french; Adresse:10, rue de Richelieu 750014 Paris
+Name:Aux 2 Oliviers;Type of cuisine:french; Adresse:10, rue de Richelieu 750015 Paris
+Name:Le 23 Clauzel;Type of cuisine:french; Adresse:10, rue de Richelieu 750016 Paris
+Name:La Grande Cascade;Type of cuisine:french; Adresse:10, rue de Richelieu 750017 Paris
+Name:Amore e Gelosia;Type of cuisine:french; Adresse:10, rue de Richelieu 750018 Paris
+Name:Giallo Oro;Type of cuisine:french; Adresse:10, rue de Richelieu 750019 Paris
+Name:So Sushi;Type of cuisine:french; Adresse:10, rue de Richelieu 750020 Paris
+
