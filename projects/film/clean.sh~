@@ -55,7 +55,6 @@ exec<$FILE_PATH$FILE_RATING_TEMP;
 
 rm $FILE_PATH$FILE_RATING_TEMP;
 cut -d' ' -f2- temp.txt > $FILE_PATH$FILE_RATING_TEMP;
-rm temp.txt;
 
 #Get the new film from 2014
 sed '/^CRC/,/^====/d' $FILE_PATH$FILE_DATE | sed -n "/$COUNTRY/p" | sed -n "/($YEAR)/p" | sed -n "/$MONTH $YEAR/p" | iconv -f ISO-8859-1 -t utf-8 | sed -e "/\(20[0-9][0-9]\)\t*(.*)/d" > $FILE_PATH$FILE_DATE_TEMP;
