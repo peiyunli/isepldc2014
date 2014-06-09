@@ -1,0 +1,37 @@
+How to use fetchmail in Linux
+
+To use fetchmail , it is important to finish the configuration. We can do it by commande line or by using "fetchmailconf" with a UI which is easy to use.
+
+The following steps are for commande line.
+
+1.To stop fetchmail while configuring it, run
+
+/etc/init.d/fetchmail stop
+
+2.The file /etc/fetchmailrc should look as follows:
+
+set syslog
+
+set daemon 240
+
+poll pop.gmail.com
+  with nodns,
+  with protocol POP3
+  user "jane.doe@gmail.com" there is jane here,
+  with password doeadeer,
+  with ssl, sslcertck;
+
+3.Since this file contains your Gmail password, you may wish to give it restrictive read permission:
+
+chmod 600 /etc/fetchmailrc
+
+4.To test your configuration, run fetchmail as below; this should be run as root, since it reads /etc/fetchmailrc.
+
+fetchmail -v -d0 -f /etc/fetchmailrc
+
+Take a look at /var/log/mail.log (e.g., using less /var/log/mail.log) to see that the connection was successful. 
+
+5.Once your configuration is working, you can restart fetchmail with
+
+/etc/init.d/fetchmail start
+
