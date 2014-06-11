@@ -1,0 +1,49 @@
+How to use postfix in Linux
+
+1.install postfix
+
+apt-get install postfix
+
+2.Then open your postfix config file:
+
+vim /etc/postfix/main.cf
+
+and following lines to it:
+
+relayhost = [smtp.gmail.com]:587
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_tls_CAfile = /etc/postfix/cacert.pem
+smtp_use_tls = yes
+
+3.You might have noticed that we haven’t specified our Gmail username and password in above lines. They will go into a different file. Open/Create
+
+vim /etc/postfix/sasl_passwd
+
+4.And add following line:
+
+[smtp.gmail.com]:587    USERNAME@gmail.com:PASSWORD
+
+If you want to use your Google App’s domain, please replace @gmail.com with your @domain.com
+
+5.Fix permission and update postfix config to use sasl_passwd file:
+
+For best practice it is advisable that you change the ownership of the credentials files that you’ve just created and set restrictive permissions so that others with access to the server can not view the Gmail account credentials, lets do this now like so:
+
+chmod 640 /etc/postfix/sasl_passwd*
+chown postfix:postfix /etc/postfix/sasl_passwd*
+
+(In "postfix:postfix" , we should use the user existing,such as "root:root". Even if we use "root" here ,after the configuration,the other users can use mail.)
+
+6.Now we need to rebuild the hash, execute the following command:-
+
+postmap /etc/postfix/sasl_passwd
+
+7.Next, validate certificates to avoid running into error. Just run following command:
+
+cat /etc/ssl/certs/Thawte_Premium_Server_CA.pem | sudo tee -a /etc/postfix/cacert.pem
+
+8.Finally, reload postfix config for changes to take effect:
+
+sudo /etc/init.d/postfix reload

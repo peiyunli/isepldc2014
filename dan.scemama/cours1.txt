@@ -1,0 +1,7 @@
+Comment "pinguer" un serveur :
+
+la variable i permet de specifier un intervalle : 
+
+ping -i 5 8.8.8.8
+
+ping google toutes les 5 secondes
