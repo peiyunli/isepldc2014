@@ -1,0 +1,16 @@
+1)Qu'est ce que bash?
+=>Bash est un type de shell. Le shell standard est sh. bash est un
+surensembles de sh.
+Pour connaitre son type de shell, il faut entrer "echo $SHELL"
+
+2) Qu'est ce qu'un shell?
+=>Le shell désigne le programme qui interprète les commandes, et par
+extension le langage associé.
+
+3)Que signifie Posix?
+=>POSIX c'est le standard officiel qui définit les interfaces communes à tous les systèmes de type Unix. 
+Quand vous voulez que votre programme fonctionne sur tous les Unix alors vous codez en respectant les interfaces POSIX 
+et ainsi vous êtes compatible avec Linux, les BSD, Solaris, etc.
+
+4)Comment forker un repository sur Github?
+=>Pour forker un repository, il faut aller sur le repository dans le navigateur et cliquer sur fork.
