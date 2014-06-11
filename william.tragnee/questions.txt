@@ -1,0 +1,72 @@
+﻿Comment faire une variable ? (stocker une valeur dans une variable)
+
+message='Bonjour tout le monde'
+
+Attention à ne pas mettre d'espace autour du =
+Pour l'afficher, on utilise echo $message
+
+------------------------------------------------------------------------
+Comment faire un for ? Un if ? Qu'est ce qu'on peut comparer ?
+
+for :
+for VARIABLE in file1 file2 file3
+do
+	command1 on $VARIABLE
+	command2
+	commandN
+done
+
+for i in 1 2 3 4 5
+do
+   echo "Welcome $i times"
+done
+
+------------------------------
+if :
+if [ test ]
+  then
+    echo "/var/log/messages exists."
+elif 
+  then
+    [test 2]
+else
+fi
+------------------------------------------------------------------------
+Comment enregistrer le texte d'une variable dans un fichier ?
+echo "compteur = $compteur" >fichier.txt
+
+------------------------------------------------------------------------
+Comment enregistrer le texte d'un fichier dans une variable ?
+LS=$(ls $REPERTOIRE)
+
+------------------------------------------------------------------------
+Est ce que bash est typé ? Quel type de variable existe ?
+NOOOOON
+
+------------------------------------------------------------------------
+Comment parser du HTML ?
+
+------------------------------------------------------------------------
+Comment se connecter à une API ? Envoyer sa clé privée ? (Curl ? Exemples ?)
+
+------------------------------------------------------------------------
+Comment créer et exécuter un script ?
+
+vim script.sh
+chmod +x script.sh
+./script.sh
+
+------------------------------------------------------------------------
+Comment echo des strings avec des " ou des ; ?
+
+Echaper les apostrophes, osef du ; si c'est entre "
+
+------------------------------------------------------------------------
+Comment récupérer une valeur entrée par l'utilisateur ?
+
+$ read a
+toto
+$ echo $a
+toto
+
+Stock la valeur entrée par l'utilisateur dans la variable a

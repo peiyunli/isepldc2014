@@ -1,0 +1,36 @@
+MUA: email client
+MTA: transfert les mails (récupérer et envoyer)
+
+installer mailoutils
+
+configuration de postfix gmail------
+
+ouvrir /etc/postfix/main.cf
+->compléter
+	relayhost = [smtp.gmail.com]:587
+	smtp_sasl_auth_enable = yes
+	smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+	smtp_sasl_security_options = noanonymous
+	smtp_use_tls = yes
+
+créer ou ouvrir /etc/postfix/sasl_passwd
+->ajouter
+	[smtp.gmail.com]:587    USERNAME@gmail.com:PASSWORD 
+--USERNAME et PASSWORD à changer avec mon compte gmail
+
+changer la permission et mise à jour le fichier
+	sudo chmod 400 /etc/postfix/sasl_passwd
+	sudo postmap /etc/postfix/sasl_passwd
+
+recharge le fichier
+	sudo /etc/init.d/postfix reload
+
+
+	sudo /etc/init.d/postfix restart
+
+
+
+
+Pour tester, on installe un client messagerie (ex:mutt) et ouvrir un autre terminal pour voir l'état d'envoi du mail (tail -f /var/log/mail.log)
+envoyer un mail (mail you@example.com): saisissez un point (.) et appuyez Enter (ou)
+appuyez ctrl+d et appuyez Enter.

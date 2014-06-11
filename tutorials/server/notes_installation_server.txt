@@ -1,4 +1,5 @@
-# bzg: Thierry: ajout ici des notes sur ce que tu as installé sur le serveur.
+Titre: Init Linux web server
+
 -> Install nano : apt-get install nano
 -> Install lamp : sudo apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql
 -> Add new User : adduser <Username>

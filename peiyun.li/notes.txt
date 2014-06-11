@@ -1,0 +1,23 @@
+    cat is one of the most frequently used commands on Unix-like operating systems. It has three related functions with regard to text files: displaying them, combining copies of them and creating new ones.
+
+    cat's general syntax is
+
+    cat [options] [filenames] [-] [filenames]
+
+    The square brackets indicate that the enclosed items are optional.
+
+
+
+
+Reading Files
+
+   The most common use of cat is to read the contents of files, and cat is often the most convenient program for this purpose. All that is necessary to open a text file for viewing on the display monitor is to type the word cat followed by a space and the name of the file and then press the ENTER key. For example, the following will display the contents of a file named file1:
+
+cat file1 
+
+
+  The standard output (i.e., default destination of the output) for cat, as is generally the case for other command line (i.e., all-text mode) programs, is the monitor screen. However, it can be redirected from the screen, for example, to another file to be written to that file or to another command to use as the input for that command.
+
+  In the following example, the standard output of cat is redirected using the output redirection operator (which is represented by a rightward pointing angular bracket) to file2:
+
+cat file1 > file2

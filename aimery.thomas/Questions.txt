@@ -1,0 +1,13 @@
+Comment modifier le nom d'un fichier?: mv name1 name2 :rename file name1 into name2
+
+Comment déplacer un fichier d'un dossier à un autre? : mv name1 folderPath/
+
+Comment démarrer Git Bash dans un répertoire spécifique? : En attente...
+
+How to list all lines of a file?
+
+	Use cat 'nameofthefile'
+
+How to put a variable in a sed parsing expression?
+
+	sed -e "s/^.*\"$value\"[ ]*:[ ]*\"//" -e 's/".*//'

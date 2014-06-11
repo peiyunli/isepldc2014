@@ -31,3 +31,14 @@ dématérialisée. C’est par exemple le stockage de données pour des
 raisons de sauvegarde qui est fait par les entreprises qui souhaitent
 ne pas avoir qu’en interne les données.
 
+
+* Scenarios
+
+In each case, detail the *needs*, the possible solutions, the one you
+select and the reasons why.
+
+** Individual blogger
+
+** CEO of a small startup
+
+** CTO of a large company storing a lot of data
