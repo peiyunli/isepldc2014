@@ -12,7 +12,16 @@ FILE_RATING_TEMP="ratings-temp.list";
 FILE_DATE_PARSED="release-dates-parsed.list";
 FILE_RATING_PARSED="ratings-parsed.list";
 
-MONTH="September";
+if [ -e $FILE_PATH$FILE_DATE_PARSED ]
+then
+	rm $FILE_PATH$FILE_DATE_PARSED;
+fi
+if [ -e $FILE_PATH$FILE_RATING_PARSED ]
+then
+	rm $FILE_PATH$FILE_RATING_PARSED;
+fi
+
+MONTH="May"
 YEAR="2014";
 COUNTRY="France";
 
@@ -31,11 +40,25 @@ fi
 
 
 #Get films from 2014 and erase the 2 first column
-sed '/^CRC/,/^MOVIE RATINGS/d' $FILE_PATH$FILE_RATING | sed '/^--/,/^For further/d' | sed -n "/($YEAR)/p" | sed 's/\s\s*/ /g' | cut -d' ' -f3- >$FILE_PATH$FILE_RATING_TEMP;
+sed '/^CRC/,/^MOVIE RATINGS/d' $FILE_PATH$FILE_RATING | sed '/^--/,/^For further/d' | sed -n "/($YEAR)/p" | sed -e 's/\s\s*/ /g' | cut -d' ' -f3- >$FILE_PATH$FILE_RATING_TEMP;
 
+#Get vote less or equal to 1500
+exec<$FILE_PATH$FILE_RATING_TEMP;
+   while read line
+   do
+	login=$(echo $line | cut -d' ' -f1);
+   	if [ $login -ge 1500 ]
+	then
+		echo $line >> temp.txt;
+	fi
+   done
+
+rm $FILE_PATH$FILE_RATING_TEMP;
+cut -d' ' -f2- temp.txt > $FILE_PATH$FILE_RATING_TEMP;
+rm temp.txt;
 
 #Get the new film from 2014
-sed '/^CRC/,/^====/d' $FILE_PATH$FILE_DATE | sed -n "/$COUNTRY/p" | sed -n "/($YEAR)/p" | sed -n "/$MONTH $YEAR/p" > $FILE_PATH$FILE_DATE_TEMP;
+sed '/^CRC/,/^====/d' $FILE_PATH$FILE_DATE | sed -n "/$COUNTRY/p" | sed -n "/($YEAR)/p" | sed -n "/$MONTH $YEAR/p" | iconv -f ISO-8859-1 -t utf-8 | sed -e "/\(20[0-9][0-9]\)\t*(.*)/d" > $FILE_PATH$FILE_DATE_TEMP;
 
 
 #we paste the content of the file temp in the actual file and remove the temp file
@@ -52,19 +75,19 @@ cat $FILE_PATH$FILE_RATING_TEMP > $FILE_PATH$FILE_RATING_PARSED;
 sed -n '/{.*}/{s/.*//;x;d;};x;p;${x;p;}' $FILE_PATH$FILE_DATE_PARSED | sed '/^$/d' > $FILE_PATH$FILE_DATE_TEMP;
 sed -n '/{.*}/{s/.*//;x;d;};x;p;${x;p;}' $FILE_PATH$FILE_RATING_PARSED | sed '/^$/d' > $FILE_PATH$FILE_RATING_TEMP;
 
-#we paste the content of the file temp in the actual file and remove the temp file
+#we paste the content of the file temp in the actual file
 cat $FILE_PATH$FILE_DATE_TEMP > $FILE_PATH$FILE_DATE_PARSED;
 cat $FILE_PATH$FILE_RATING_TEMP > $FILE_PATH$FILE_RATING_PARSED;
 
 
 #We remove the line with (TV) (VG) (V) in the rating file
-sed '/(VG)/{N;d;}' $FILE_PATH$FILE_RATING_PARSED | sed '/(TV)/{N;d;}'| sed '/(V)/{N;d;}'> $FILE_PATH$FILE_RATING_TEMP;
+sed -e '/(VG)/d' $FILE_PATH$FILE_RATING_PARSED | sed -e '/(TV)/d' | sed -e '/(V)/d' > $FILE_PATH$FILE_RATING_TEMP;
 
 
 #we remove the line with certain word in the release date
-sed '/Festival)/{N;d;}' $FILE_PATH$FILE_DATE_PARSED | sed '/premiere)/{N;d;}'| sed '/(TV)/{N;d;}' | sed '/(internet)/{N;d;}' | sed '/(Cannes/{N;d;}' | sed '/(limited)/{N;d;}' | sed '/(V)/{N;d;}'| sed '/(Cinema du Reel)/{N;d;}'| sed "/$COUNTRY:$YEAR/{N;d;}"> $FILE_PATH$FILE_DATE_TEMP;
+sed -e '/(TV)/d' $FILE_PATH$FILE_DATE_PARSED |  iconv -f utf-8 -t ISO-8859-1 > $FILE_PATH$FILE_DATE_TEMP;
 
-#we paste the content of the file temp in the actual file and remove the temp file
+#we paste the content of the file temp in the actual file
 cat $FILE_PATH$FILE_DATE_TEMP > $FILE_PATH$FILE_DATE_PARSED;
 cat $FILE_PATH$FILE_RATING_TEMP > $FILE_PATH$FILE_RATING_PARSED;
 

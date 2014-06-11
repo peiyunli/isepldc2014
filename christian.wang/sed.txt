@@ -1,0 +1,19 @@
+sed '' test.txt : 
+affiche tout ce qu'il y a dans le fichier test
+
+sed -e '4d; 7d' test.txt : 
+supprime les lignes 4 et 7. d signifie qu'on n'affiche pas.
+-e permet de passer plusieurs commandes à la suite.
+
+sed '4,7 d' test.txt : 
+supprime toutes les lignes entre la ligne 4 et 7.
+
+sed '/^#/ d' test.txt :
+supprime les lignes commençant par #
+
+MODE SILENCIEUX:
+sed -n '/Ici/p' test.txt
+
+C'est l'utilisation en mode "silencieux", c'est-à-dire que sed ne doit afficher par défaut aucune ligne.
+Seules les lignes intéressantes seront affichées, avec la commande p (print). 
+Pour passer en mode "silencieux", il faut utiliser l'option sed -n
