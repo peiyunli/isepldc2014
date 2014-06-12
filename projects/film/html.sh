@@ -12,7 +12,6 @@ HTML_TEMP="index-temp.html";
 
 
 
-
  i=0;
 
  # We read the data-to-html file to retrieve the informations
@@ -59,9 +58,6 @@ replaces(){
 
 cat $SITE_PATH$HTML_MODEL > $SITE_PATH$HTML_TEMP;
 
-# image="http://ia.media-imdb.com/images/M/MV5BMTQ0ODgzNjg2MV5BMl5BanBnXkFtZTgwNDkxMzc3MDE@._V1_SY317_CR0,0,214,317_AL_.jpg";
-# sed -e "s/imagenumber0/$image/g" $SITE_PATH$HTML_TEMP > $SITE_PATH$HTML;
-
 
 
 for i in `seq 0 4`;
@@ -106,7 +102,7 @@ do
 
 
 
-    echo $i
+    echo "The film number "$((i+1))" was added in the html file."
 done
 
 rm $SITE_PATH$HTML_TEMP;

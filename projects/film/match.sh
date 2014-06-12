@@ -68,5 +68,7 @@ while read line2
 	# We sort the file accoding to the rating and we keep just 5 films
 	cat $FILE_PATH$FILE_MATCHED_TEMP  | sort -r |  sed -n 1,5p > $FILE_PATH$FILE_MATCHED;
 
+
+	echo "The matching is completed. data-to-html.txt has been created";
 	# Remove temp file
 	rm  $FILE_PATH$FILE_MATCHED_TEMP;

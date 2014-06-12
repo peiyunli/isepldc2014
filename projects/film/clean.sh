@@ -99,6 +99,9 @@ sed -e '/(TV)/d' $FILE_PATH$FILE_DATE_PARSED |  iconv -f utf-8 -t ISO-8859-1 > $
 cat $FILE_PATH$FILE_DATE_TEMP > $FILE_PATH$FILE_DATE_PARSED;
 cat $FILE_PATH$FILE_RATING_TEMP > $FILE_PATH$FILE_RATING_PARSED;
 
+echo "The file release-dates-parsed.list was created";
+echo "The file ratings-parsed.list was created";
+
 #remove tempory files
 rm $FILE_PATH$FILE_DATE_TEMP;
 rm $FILE_PATH$FILE_RATING_TEMP;
