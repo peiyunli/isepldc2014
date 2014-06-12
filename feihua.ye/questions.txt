@@ -1,0 +1,23 @@
+1. les paramètres?
+terminal-- ./fichier.sh param1 param2 param3 
+
+Les paramètres positionnels:
+Ce sont tous simplement les arguments passés en "paramètres" sur la ligne de commandes, à l'invocation d'un script.
+Ils sont alors affectés aux variables réservées 1,2,3,...9,10,11,... et peuvent être appelés à l'aide des expressions $1,$2...${10},${11}..
+
+Les paramètres spéciaux:
+$0	Contient le nom du script tel qu'il a été invoqué
+$*	L'ensembles des paramètres sous la forme d'un seul argument
+$@	L'ensemble des arguments, un argument par paramètre
+$#	Le nombre de paramètres passés au script
+$?	Le code retour de la dernière commande
+$$	Le PID su shell qui exécute le script
+$!	Le PID du dernier processus lancé en arrière-plan
+
+Initialiser des paramètres:set
+set param1 param2 param3
+
+
+
+2. est ce que le nombre des paramètres de bash est limité?
+oui, taper : getconf ARG_MAX
