@@ -1,0 +1,14 @@
+fdisk
+
+This command lists all the disks in the directory and gives information about them.
+
+The default use is : fdisk -l
+
+this command will separate the local disks from the external disk,
+display the type of the partition (fat, ntfs, ...).
+Very useful when you try to mount an external disk
+
+the other options are more complicated : 
+
+-u : change the size unit from cylinders to sectors
+-s [partition] : the size of the partition in blocks

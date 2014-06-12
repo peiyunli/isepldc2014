@@ -4,6 +4,8 @@ When you plug an extern device to the system, it is located somewhere
 in the system, for example : /dev/fd0 and you can't access to its
 datas.
 
+To know what is the path of the disk, see the tutorial on *fdisk*
+
 Mount allows you to define a folder that will contain the content of
 the extern device.  By default, mount will try to guess the filesystem
 type of your device
