@@ -5,3 +5,5 @@ Ce fichier permet de lister les pseudonymes et email utiliés par les élèves sur 
 
 Christian Wang
 Pseudo : Chwang1234, Christian
+Dan SCEMAMA
+Pseudo : scemamadan, Dan
