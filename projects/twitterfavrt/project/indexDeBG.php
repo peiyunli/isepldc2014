@@ -31,7 +31,7 @@
     $hashtag = "%23".$argv[2];
 
     $boucle = 0;
-    while ($boucle < 1) {
+    while ($boucle < 10) {
   
         if ($boucle == 0) {
             $query = 'https://api.twitter.com/1.1/search/tweets.json?q=' . $hashtag . '&count=100';
