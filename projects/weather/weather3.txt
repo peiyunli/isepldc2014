@@ -1,0 +1,123 @@
+               
+                Date 
+                Temperature
+                 
+                  oC 
+                 
+                Weather 
+              
+               
+                Minimum 
+                Maximum 
+               
+               
+               
+                 11 
+                  Jun
+                  ( Wed )
+                 
+                
+                  
+                  16 
+                  
+                 
+                
+                   
+                  24 
+                  
+                 
+                 
+                 
+                 
+                
+                   
+                     
+                      Fine 
+                     
+                   
+                
+               
+           
+               
+                 12 
+                  Jun
+                  ( Thu )
+                 
+                
+                  
+                  15 
+                  
+                 
+                
+                   
+                  25 
+                  
+                 
+                 
+                 
+                 
+                
+                   
+                     
+                      Sunny 
+                     
+                   
+                
+               
+           
+               
+                 13 
+                  Jun
+                  ( Fri )
+                 
+                
+                  
+                  16 
+                  
+                 
+                
+                   
+                  24 
+                  
+                 
+                 
+                 
+                 
+                
+                   
+                     
+                      Sunny 
+                     
+                   
+                
+               
+           
+               
+                 14 
+                  Jun
+                  ( Sat )
+                 
+                
+                  
+                  15 
+                  
+                 
+                
+                   
+                  19 
+                  
+                 
+                 
+                 
+                 
+                
+                   
+                     
+                      Scattered showers 
+                     
+                   
+                
+               
+           
+            
+             
