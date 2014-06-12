@@ -1,0 +1,32 @@
+#+TITLE:How to test the project ?
+
+* Directory tree
+
+First you must have the folder isepldc2014/projects/film/ in this directory : /var/www/
+
+* Rights
+
+It will work well if you put enough rights for the Folder film/ and his files. For not being bother, you can simply do : sudo chmod -R 777 /var/www/isepldc2014/projects/film/
+
+* Start the scripts
+
+You have to execute the file start.sh
+For that you can do : cd /var/www/isepldc2014/projects/film/; bash start.sh;
+
+* Arguments
+
+You can specifie until 3 arguments for start.sh :
+
+1. First the country where the films have been release, it has to be in word has to be in english and it depends of the content we can find in release-date.list. By default it's France. Other example to use : USA,UK,Canada,Italy,Russia...
+
+2. Second, the month of the release. It has to be in english again.
+By default it's May i.e : May,March,April... 
+
+3. The year of the release. It's 2014 by default.
+
+* Other things
+
+At the start of the script you will be asked for the root password. Indeed we use sudo at one moment for creating the directory that will store the files to work on. 
+
+The linux machine must have an internet browser. It must have an internet connection.
+

@@ -27,15 +27,23 @@ COUNTRY="France";
 
 
 #argument for country and year
-if [ $# -eq 2 ]
+if [ $# -eq 3 ]
   then
-    YEAR=$1;
-    COUNTRY=$2;
+    
+    COUNTRY=$1;
+    MONTH=$2;
+    YEAR=$3;
 fi
 
 if [ $# -eq 1 ]
   then
-    YEAR=$1;
+    COUNTRY=$1;
+fi
+
+if [ $# -eq 2 ]
+  then
+    COUNTRY=$1;
+    MONTH=$2;
 fi
 
 
@@ -90,6 +98,9 @@ sed -e '/(TV)/d' $FILE_PATH$FILE_DATE_PARSED |  iconv -f utf-8 -t ISO-8859-1 > $
 #we paste the content of the file temp in the actual file
 cat $FILE_PATH$FILE_DATE_TEMP > $FILE_PATH$FILE_DATE_PARSED;
 cat $FILE_PATH$FILE_RATING_TEMP > $FILE_PATH$FILE_RATING_PARSED;
+
+echo "The file release-dates-parsed.list was created";
+echo "The file ratings-parsed.list was created";
 
 #remove tempory files
 rm $FILE_PATH$FILE_DATE_TEMP;
