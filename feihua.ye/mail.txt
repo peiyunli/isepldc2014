@@ -1,0 +1,19 @@
+Mail
+
+Envoi rapide d'un email
+
+Ouvrez un Terminal et tapez :
+echo "Je confirme le RDV aujourd'hui à 12h." | mail -s "RDV OK" toto@toto.com
+L'option "-s" permet d'indiquer le sujet du message.
+
+
+Envoi du contenu d'un fichier texte par email
+mail -s "Contenu du fichier toto.txt" toto@toto.com < toto.txt
+
+
+Envoi d'un email + pièce jointe
+echo "Ci-joint la photo de ma voiture" | mutt -s "Ma voiture" -a voiture.jpg -- toto@toto.com
+
+
+Envoi d'un email avec plusieurs pièces jointes :
+echo | mutt -s "Ma voiture" -a voiture.jpg voiture1.jpg -- toto@toto.com
