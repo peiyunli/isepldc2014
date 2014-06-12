@@ -130,7 +130,7 @@ Auteur : $authorRt
 Tweet : $tweetRt
 Re tweeté $rt fois
 
-Merci d'avoir utilisé notre service, aurevoir !" | mail -s "Etude du hashtag $hashtag" $email
+Merci d'avoir utilisé notre service, au revoir !" | mail -s "Etude du hashtag $hashtag" $email
 
 #THE END !
 
