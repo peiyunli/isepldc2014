@@ -1,0 +1,15 @@
+#+TITLE:How to test the project ?
+
+* Directory tree
+First you must have the folder isepldc2014/projects/film/ in this directory : /var/www/
+
+* Rights
+It will work well if you put enough rights for the Folder film/ and his files. For not being bother, you can simply do : sudo chmod -R 777 /var/www/isepldc2014/projects/film/
+
+* Start the scripts
+You have to execute the file start.sh
+For that you can do : cd /var/www/isepldc2014/projects/film/; bash start.sh;
+
+* Other things
+At the start of the script you will be asked for the root password. Indeed we use sudo at one moment for creating the directory that will store the files to work on. 
+
