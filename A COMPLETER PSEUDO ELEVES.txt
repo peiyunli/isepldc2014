@@ -5,5 +5,7 @@ Ce fichier permet de lister les pseudonymes et email utiliés par les élèves sur 
 
 Christian Wang
 Pseudo : Chwang1234, Christian
+Hadrien Vercier
+Pseudo : neirdahcier
 Dan SCEMAMA
 Pseudo : scemamadan, Dan
