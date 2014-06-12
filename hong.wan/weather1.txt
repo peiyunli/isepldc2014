@@ -1,0 +1,515 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>World Weather Information Service -
+Paris
+</title>
+<script language="JavaScript">
+<!--
+  function MM_openBrWindow(theURL,winName,features) { //v2.0
+    window.open(theURL,winName,features);
+  }
+//-->
+</script>
+<link rel="stylesheet" href="../worldwx.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0" class="bodytext"> 
+<table width="770" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="185" bgcolor="#00295B" align="center" valign="top">
+        
+    <table width="179" border="0" cellspacing="0" cellpadding="0">
+      <tr align="center">
+        <td height="106"><a href="../wmo.htm"><img src="../img/wmologo.png" alt="World Meteorological Organization" border="0"></a></td>
+      </tr>
+    </table>
+    <table width="182" border="0" cellspacing="0" cellpadding="1">
+      <tr>
+        <td><hr></td>
+      </tr>
+      <tr>
+        <td bgcolor="#6699FF" class="whitetext">&nbsp;Official Observations</td>
+      </tr>
+      <tr>
+        <td class="whitetext">
+          <table cellspacing=0 cellpadding=0>
+            <tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td><td class="whitetext"><a href="../cloud/" class="whitelink">Cloudiness & Rain</a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="height8">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#6699FF" class="whitetext">&nbsp;Official Forecasts</td>
+      </tr>
+      <tr>
+        <td class="whitetext">&nbsp;Select WMO Region</td>
+      </tr>
+      <tr>
+        <td class="yellowtext">
+          <table cellspacing=0 cellpadding=0>
+            <tr>
+              
+              <td width=5 class="yellowtext">&nbsp;*&nbsp;</td><td width=160 class="yellowtext"><a href="../africa.htm" class="yellowlink">Africa</a></td><td width=5 class="yellowtext">&nbsp;</td>
+              
+            </tr>
+            <tr>
+              
+              <td width=5 class="yellowtext">&nbsp;*&nbsp;</td><td width=160 class="yellowtext"><a href="../asia.htm" class="yellowlink">Asia</a></td>
+              
+            </tr>
+            <tr>
+              
+              <td width=5 class="yellowtext">&nbsp;*&nbsp;</td><td width=160 class="yellowtext"><a href="../europe.htm" class="yellowlink">Europe</a></td>
+              
+            </tr>
+            <tr>
+              
+              <td width=5 class="yellowtext">&nbsp;*&nbsp;</td><td width=160 class="yellowtext"><a href="../n_america.htm" class="yellowlink">N. & Central America</a></td>
+              
+            </tr>
+            <tr>
+              
+              <td width=5 class="yellowtext">&nbsp;*&nbsp;</td><td width=160 class="yellowtext"><a href="../s_america.htm" class="yellowlink">S. America</a></td>
+              
+            </tr>
+            <tr>
+              
+              <td width=5 class="yellowtext">&nbsp;*&nbsp;</td><td width=160 class="yellowtext"><a href="../pacific.htm" class="yellowlink">S.W. Pacific</a></td>
+              
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><hr></td>
+      </tr>
+      <tr>
+        <td bgcolor="#6699FF" class="whitetext"><a href="../wisnew.htm" class="whitelink">&nbsp;What's New</a></td>
+      </tr>
+      <tr>
+        <td class="whitetext">
+          <table cellspacing=0 cellpadding=0>
+
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#datacollection" class="whitelink">Launch of Data Collection or Production for World Weather Information Service</a>&nbsp;
+<img src=/img/new.gif border=0></td>
+	</tr>  
+	
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#myworldweather9" class="whitelink">New Version of MyWorldWeather with Additional Language Support and Enhanced User-interface</a></td>
+	</tr>  
+		  
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#myworldweather" class="whitelink">Seven language versions of MyWorldWeather app launched</a></td>
+	</tr>		  
+		  
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#android" class="whitelink">MyWorldWeather on Trial on Android Platform and with Multiple Language Support</a></td>
+	</tr>
+	
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#One_Billion_Mark" class="whitelink">WWIS Website Hitting One Billion Mark</a>
+	</td>
+	</tr>
+	
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#polish_press" class="whitelink">Poland launched Polish version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#mobile" class="whitelink">MyWorldWeather - the mobile application of WWIS launched</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#russian_press" class="whitelink">Russia launched Russian version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#future_version" class="whitelink">Future version of WWIS launched</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#italian_press" class="whitelink">Italy launched Italian version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#german_press" class="whitelink">Germany launched German version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#french_press" class="whitelink">France launched French version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../wisnew.htm#spanish_press" class="whitelink">Spain launched Spanish version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext" valign="top">&nbsp;*&nbsp;</td><td class="whitetext" valign="top"><a href="../event.htm" class="whitelink">New domain name for WWIS</a></td>
+	</tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="height8">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bgcolor="#6699FF" class="whitetext"><a href="../links.htm" class="whitelink">&nbsp;Related Web Sites</a></td>
+      </tr>
+      <tr>
+        <td class="whitetext">
+          <table cellspacing=0 cellpadding=0>
+            <tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a class="whitelink" href="javascript:MM_openBrWindow('http://www.wmo.int','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=600,height=400')" title="World Meteorological Organization">WMO</a></td>
+            </tr>
+            <tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a class="whitelink" href="javascript:MM_openBrWindow('http://severe.worldweather.wmo.int/','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=600,height=400')" title="Severe Weather Information Centre">Severe Weather</a></td>
+            </tr>
+            <tr>
+            
+            </tr>
+          </table>
+        </td>
+      <tr>
+        <td class="height8">&nbsp; </td>
+      </tr>
+      <tr>
+        <td bgcolor="#6699FF" class="whitetext">&nbsp;Other Languages</td>
+      </tr>
+      <tr>
+        <td class="whitetext">
+	<table cellspacing=0 cellpadding=0>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://worldweather.met.gov.om:8000/" class="whitelink" title="Arabic Version">Arabic Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://www.worldweather.cn/" class="whitelink" title="Chinese Version">Chinese Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://worldweather.wmo.int/pt" class="whitelink" title="Portuguese Version">Portuguese Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://worldweather.wmo.int/es" class="whitelink" title="Spanish Version">Spanish Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://www.meteo.fr/wwis/" class="whitelink" title="French Version">French Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://www.wwis.dwd.de" class="whitelink" title="German Version">German Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://wwis.meteoam.it/" class="whitelink" title="Italian Version">Italian Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://wwis.meteoinfo.ru/" class="whitelink" title="Russian Version">Russian Version</a></td>
+	</tr>
+	<tr>
+              <td width=5 class="whitetext">&nbsp;*&nbsp;</td>
+              <td class="whitetext"><a href="http://wmo.imgw.pl/wwis/" class="whitelink" title="Polish Version">Polish Version</a></td>
+	</tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td><hr></td>
+      </tr>
+      <tr>
+        
+        <td class="whitetext">&nbsp;<a href="../pilot.htm" class="whitelink">About This Web Site</a></td>
+        
+      </tr>
+      <tr>
+        
+        <td class="whitetext">&nbsp;<a href="../members.htm" class="whitelink">Participating Members</a></td>
+        
+      </tr>
+      <tr>
+        
+        <td class="whitetext">&nbsp;<a href="../wx_icon.htm" class="whitelink">Weather Icons</a></td>
+        
+      </tr>
+      <tr>
+        <td class="whitetext">&nbsp;<a href="../event/wwis_swic_e.pdf" class="whitelink">Introductory Pamphlet</a></td>
+      </tr>
+	  <tr>
+        <td class="whitetext">&nbsp;<a href="../event/nomination.doc" class="whitelink">Nomination Form</a></td>
+      </tr>
+      <tr>
+        
+        <script language="JavaScript">
+          function go2search() {
+            self.location.href = self.location.protocol + "//" + self.location.hostname + "/webapps/search.jsp";
+          }
+        </script>
+        <td class="whitetext">&nbsp;<a href="javascript:go2search()" class="whitelink">Search</a></td>
+        
+      </tr>
+      <tr>
+        <td class="whitetext">&nbsp;<a href="mailto: webmaster@worldweather.org" class="whitelink">Contact</a></td>
+      </tr>
+      <tr>
+        
+        <td class="whitetext">&nbsp;<a href="../note.htm" class="whitelink">Note to User</a></td>
+        
+      </tr>
+      <tr>
+        
+        <td class="whitetext">&nbsp;<a href="../disclaimer.htm" class="whitelink">Disclaimer</a></td>
+        
+      </tr>
+      
+      <tr>
+        <td class="yellowtext">&nbsp;<a href="../index.htm" class="yellowlink">Back to Main Page</a></td>
+      </tr>
+      
+      <tr>
+        <td><hr></td>
+      </tr>
+      <tr>
+	<td align="center">
+	<table width="177" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+        <td align=justify bgcolor="#ECF5FF">
+This web site is operated <br>on behalf of WMO by
+        <br>
+<img src="/img/r236g245.png" width=39 height=22>
+        <a href="javascript:MM_openBrWindow('http://www.weather.gov.hk/','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=600,height=400')">
+<img src="/img/hkoicon.gif" border=0 align="center"></a>
+        <br>
+        <a href="javascript:MM_openBrWindow('http://www.weather.gov.hk/','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=600,height=400')">
+        Hong Kong Observatory</a><br>of Hong Kong, China.
+        </td> 
+        </tr>
+	</table>
+        </td> 
+        </tr>
+    </table>
+
+    </td> 
+    <td bgcolor="#FFFFFF" width="12" background="../img/left_back.png">&nbsp;</td> 
+    <td bgcolor="#FFFFFF" valign="top" align="center"> 
+      <table border="0" cellspacing="0" cellpadding="0" height="40"> 
+        <tr align="center"> 
+          <td><a href="../index.htm"><img src="../img/mainlogo4.png" width="400" height="30" alt="World Weather Information Service" border="0"></a></td> 
+        </tr> 
+      </table> 
+      <table width="565" border="0" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC"> 
+        <tr> 
+          <td height="80">
+            <table border="0" cellspacing="0" cellpadding="0" width="565" align="left" height="80"> 
+              <tr> 
+                <td width="280">
+                  <table border="0" cellspacing="0" cellpadding="0" width="280"> 
+                    <tr> 
+                      <td class="siteheader"><b><font class="text14"> 
+                       
+                        <a href="./m062.htm">France</a> 
+                       
+                      </font></b></td> 
+                    </tr> 
+                    <tr> 
+                      <td height="20"> <hr noshade> </td> 
+                    </tr> 
+                    <tr> 
+                      <td class="siteheader">
+                       
+                        <font face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#3333FF"> <a href="javascript:MM_openBrWindow('../sitelink.htm?link=http://www.meteo.fr/meteonet_en/index.htm','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=565,height=400')">Meteo France</a></font></b></font></font> 
+                      
+                      </td> 
+                    </tr> 
+                  </table>
+                </td> 
+                <td align="center" width="280">
+                 
+                  <a href="javascript:MM_openBrWindow('../sitelink.htm?link=http://www.meteo.fr/meteonet_en/index.htm','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=565,height=400')"> <img src="france_logo.png" alt="Meteo France" border="0"></a> 
+                
+                </td> 
+              </tr> 
+            </table>
+          </td> 
+        </tr> 
+        <tr valign="top" height="20"> 
+          <td height="20" class="bodytext" ><b>Weather Information for <font color="#990000"> Paris</font></b></td> 
+        </tr> 
+        <tr> 
+          <td>
+            <div align="right"> 
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0"> 
+              <tr> 
+                <td width="485">&nbsp;</td> 
+                <td width="40" align="center"><a href="javascript:MM_openBrWindow('c00194m.htm','','scrollbars=yes,width=680,height=580')"><img src="../img/map_word.png" alt="MAP" width="35" height="10" border="0"><img src="map00194_icon.png" alt="MAP" width="35" height="35" border="0"></a></td> 
+                 
+              </tr> 
+            </table> 
+            </div>
+          </td> 
+        </tr> 
+        <tr> 
+          <td>
+           
+           <hr>
+          </td> 
+        </tr> 
+         
+        <tr> 
+          <td height=18>
+            <font class=header>
+            <a name="wxforecast"></a> 
+             
+            Weather Forecast
+             
+            </font>
+          </td> 
+        </tr> 
+        <tr> 
+           
+          <td> 
+            <i>Issued at 13:00&nbsp;
+             
+            (Local time)&nbsp;
+             
+            29&nbsp;May&nbsp;
+            2014&nbsp;
+             
+            </i> 
+            <table border="1" cellspacing="0" cellpadding="0"> 
+              <tr> 
+                <td width="70" rowspan="2" align="center" bgcolor="#5da9dd" class=forecast_header_new>Date</td> 
+                <td width="140" colspan="2" align="center" bgcolor="#5da9dd" class=forecast_header_new>Temperature
+                 
+                  <a href="c00194f.htm#wxforecast" class="yellowlink"><sup>o</sup><u>C</u></a></td> 
+                 
+                <td colspan="2" rowspan="2" align="center" bgcolor="#5da9dd" class=forecast_header_new>Weather</td> 
+              </tr>
+              <tr> 
+                <td width="70" align="center" bgcolor="#FBFFE6"><b><font color="#0000FF">Minimum</font></b></td> 
+                <td width="70" align="center" bgcolor="#FBFFE6"><b><font color="#FF0000">Maximum</font></b></td> 
+              </tr> 
+               
+              <tr> 
+                <td width="70" align="center"> 29 
+                  May<br>
+                  ( Thu )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  10 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  19 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic10.gif' alt="Scattered showers" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Scattered showers</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+              <tr> 
+                <td width="70" align="center"> 30 
+                  May<br>
+                  ( Fri )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  11 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  21 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic25.gif' alt="Fine" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Fine</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+              <tr> 
+                <td width="70" align="center"> 31 
+                  May<br>
+                  ( Sat )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  13 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  21 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic25.gif' alt="Fine" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Fine</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+              <tr> 
+                <td width="70" align="center"> 01 
+                  Jun<br>
+                  ( Sun )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  12 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  18 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic25.gif' alt="Fine" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Fine</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+            <!--FDAY=4-->
+            </table> 

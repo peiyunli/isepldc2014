@@ -1,0 +1,6 @@
+Date            Temperature oC       Weather
+            Minimum Maximum
+29 May( Thu )   10       19        Scattered showers
+30 May( Fri )   11       21        Fine
+31 May( Sat )   13       21        Fine
+01 Jun( Sun )   12       18        Fine
