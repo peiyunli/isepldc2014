@@ -31,3 +31,70 @@ You need to know the basics about what is SaaS, PaaS and IaaS.
 
 In front of a project, you need to be able to make choices about what
 web service to use and why.
+
+You need to be able to connect to your openshift account on the web,
+and through =SSH=.
+
+You need to know your /username/ and your fully qualified domain name
+on openshift (each domain matches /one and only one/. application.)
+
+You need to be able to /clone/ the repository of your Wordpress
+application from openshift, and to push changes into this application.
+
+* Linux LFS
+
+You need to know the basics about the Linux File System.
+
+- =/home=
+- =/usr/bin=
+- =/usr/local/bin=
+- =/var=
+- =/var/log=
+- =/etc=
+- =/dev=
+- =/tmp=
+
+* Command line tools
+
+** Misc
+
+- What's a terminal?
+- What is a shell?
+- What is Bash?
+- What is an environment variable?
+- How to set an environment variable for a session?
+- How to set an environment variable for all sessions?
+- What standard environment variables do you know?
+- What is a Bash alias?
+- What is the syntax of a =if= test?
+- What is the syntax of a =for= loop?
+- What is the syntax of a =while= loop?
+
+** Specific command line tools
+
+- cd / pwd / rm / rmdir / mkdir / ls / ln
+- find
+- grep
+- sed
+- curl
+
+* Emails
+
+You need to know how email works: what is a MUA / MTA / MDA?
+
+* Regular expressions
+
+You need to know how to use regular expressions *for sed*.
+
+See these two pages for example and notes:
+
+- http://lite4.framapad.org/p/isep_regexp_problems
+- http://lite4.framapad.org/p/isep_regexp_notes
+
+
+
+2. Your small personal FAQ (questions/answers for oneself)
+
+3. Your logs in the git repositories -- not *your* repository, but
+   either https://github.com/nicolasroger17/isepldc2014 or
+   https://github.com/kiago/isepse2014

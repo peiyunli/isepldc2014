@@ -1,0 +1,101 @@
+mkdir: permet de créer des répertoires. On peut créer plusieurs répertoires et sous-répertoires en même temps
+
+------------------------------------------------------------------------------------------------
+
+bash les paramètres positionnels:
+
+Arguments passés en "paramètres" sur la ligne de commandes à l'invocation d'un script. Ils sont affectés aux variale réservées 1,2,3,... et peuvent être appelés avec $1,$2,....
+
+Exemple :
+
+Script permettant d'afficher certains arguments passés en paramètres
+
+#!/bin/bash
+# affiche_param.sh
+
+echo "le 1er paramètre est : $1"
+
+On invoque le script en lui passant un certain nombre de paramètres :
+
+Le 1er paramètre est :1
+
+
+------------------------------------------------------------------------------------------------
+
+Boucle for et if
+
+for i
+do
+  echo $i
+  echo "passage a l'argument suivan "
+done
+
+fi : enf if
+
+if
+  then
+  elif
+    then
+  else
+fi
+
+
+------------------------------------------------------------------------------------------------
+
+Déplacer ou renommer un fichier : mv
+
+Exemple:
+Reommer le fichier apple en orange.doc
+mv apple orange.doc
+
+------------------------------------------------------------------------------------------------
+
+sed '' test.txt : 
+affiche tout ce qu'il y a dans le fichier test
+
+sed -e '4d; 7d' test.txt : 
+supprime les lignes 4 et 7. d signifie qu'on n'affiche pas.
+-e permet de passer plusieurs commandes à la suite.
+
+sed '4,7 d' test.txt : 
+supprime toutes les lignes entre la ligne 4 et 7.
+
+sed '/^#/ d' test.txt :
+supprime les lignes commençant par #
+
+MODE SILENCIEUX:
+sed -n '/Ici/p' test.txt
+
+C'est l'utilisation en mode "silencieux", c'est-à-dire que sed ne doit afficher par défaut aucune ligne.
+Seules les lignes intéressantes seront affichées, avec la commande p (print). 
+Pour passer en mode "silencieux", il faut utiliser l'option sed -n
+
+------------------------------------------------------------------------------------------------
+
+La commande grep
+
+La commande grep permet de rechercher une chaîne de caractères dans un fichier. Les options sont les suivantes :
+
+-v affiche les lignes ne contenant pas la chaîne
+-c compte le nombre de lignes contenant la chaîne
+-n chaque ligne contenant la chaîne est numérotée
+-x ligne correspondant exactement à la chaîne
+-l affiche le nom des fichiers qui contiennent la chaîne
+
+Exemple avec le fichier carnet-adresse :
+olivier:29:0298333242:Brest  
+marcel:13:0466342233:Gardagnes  
+myriam:30:0434214452:Nimes  
+yvonne:92:013344433:Palaiseau
+
+On peut utiliser les expressions régulières avec grep. Si on tape la commande :
+grep ^[a-d] carnet-adresse
+
+On va obtenir tous les lignes commençant par les caractères compris entre a et d. Dans notre exemple, on n'en a pas, d'où l'absence de sortie.
+
+grep Brest carnet-adresse
+Permet d'obtenir les lignes contenant la chaîne de caractère Brest, soit :
+olivier:29:0298333242:Brest
+
+------------------------------------------------------------------------------------------------
+
