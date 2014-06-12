@@ -144,3 +144,8 @@ MDA: Mail Delivery Agent (le logiciel qui intervient dans la dernière étape du
 
 Postfix est l'agent de transfert de courriel (MTA). Il est le serveur de courriel par défaut dans plusieurs systèmes de type UNIX, comme Mac OS X, NetBSD1, diverses distributions GNU/Linux, etc.
 
+
+
+
+
+-------test pour modifier un fichier
