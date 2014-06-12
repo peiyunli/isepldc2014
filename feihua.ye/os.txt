@@ -1,0 +1,146 @@
+système d'exploitaiton: un logiciel, le matériel informatique, les logiciels, les utilisateurs.
+
+kernel: noyau d'un système d'exploitation, gère les resources de l'ordi et permet aux matériels et logiciels de communiquer entre eux.
+
+shell: (une interface système) est une couche logicielle qui fournit l'interface utilisateur d'un système d'exploitation, la couche la plus externe de ce dernier.  
+shell commands: man help info
+
+github
+
+    git status :affiche l’état du répertoire de travail et de la zone d’attente. Elle permet de voir les modifications qui ont été 
+                ajoutées à la zone d’attente, celle qui n’y ont pas été ajoutées, et les fichiers qui ne sont pas suivis par Git.
+    git log : affiche les snapshots qui ont fait l’objet d’un commit. Elle permet d’afficher l’historique du projet, le filtrer, et 
+                chercher des modifications données.
+    git clone : copie un dépôt Git existant.
+    git add : ajoute une modification effectuée dans le répertoire de travail à la zone d’attente. Elle indique à Git qu’il faut inclure 
+            les mises à jour d’un fichier donné dans le prochain commit.
+    git rm
+    git commit : fait un commit (sauvegarde) dans l’historique du projet à partir du snapshot de la zone d’attente.
+    git pull : vers le dépot
+    git push : vers local
+
+
+clé ssh  ssh-keygen
+
+
+IaaS / PaaS / SaaS
+L’IaaS (Infrastructure as a service), le PaaS (Platform as a service) et le SaaS (Software as a service) correspondent à 3 modèles techniques différents ou utilisation de Cloud Computing. Chacun de ces modèles joue un rôle spécifique :
+
+    L’IaaS correspond à la partie infrastructure du Cloud. Il permet aux entreprises d’externaliser et de faire évoluer leur infrastructure matérielle (serveurs, réseau et stockage) à la demande et à distance. Dans l’IaaS, seule l’infrastructure matérielle (hardware) est dématérialisée. C’est par exemple le stockage de données pour des raisons de sauvegarde qui est fait par les entreprises qui souhaitent ne pas avoir qu’en interne les données. Voir notre offre de stockage et sauvegarde.(ex:Amazon, Microsoft, VMWare, Rackspace,Red Hat)
+
+    Le PaaS est un modèle qui se « pose » sur le IaaS. Il permet d’externaliser l’infrastructure matérielle, mais également des applications middleware : bases de données, couches d’intégration de données et environnements de développement des applications. (Google App Engine,Microsoft Azure，Force.com,Heroku，Engine Yard,AppFog, Mendix Standing Cloud)
+
+    Le SaaS est la couche finale du Cloud, la plus aboutie et la plus simple à appréhender pour l’internaute. Elle permet à l’utilisateur final d’accéder via une interface aux applications de l’entreprise, hébergées sur un environnement sécurisé (il lui suffit de se connecter avec ses identifiants via une interface). L’entreprise consomme alors ses applications à la demande, en fonction de ses besoins réels. (Citrix(GoToMeeting),Cisco(WebEx),Salesforce(CRM),ADP, Workday,SuccessFactors)
+
+Openshift: PaaS
+-->ajout clé ssh
+-->connecté passant par le terminal
+	installer rhc client tool (ruby et git requis): 
+	sudo gem install rhc
+	gem update rhc
+
+	Setup your environment:
+	rhc setup
+
+		Starting Interactive Setup for OpenShift's command line interface
+
+		We'll help get you setup with just a couple of questions.
+
+		To connect to openshift.redhat.com enter your OpenShift login (email or Red Hat login id)
+
+	Create your first application:
+	rhc app create myapp php-5.3
+		Password: (Enter your account password)
+
+	Make a change, publish
+	cd myapp
+	vim php/index.php
+		(Make a change...  :wq)
+	git commit -a -m "My first change"
+	git push
+
+
+Linux FHS
+
+    /home
+    /usr/bin
+    /usr/local/bin
+    /var
+    /var/log
+    /etc
+    /dev
+    /tmp
+
+Arborescence
+/bin  :  Ce répertoire contient les binutils, les commandes de base pour tous les utilisateurs (cp, mv, rm…). Ce sont les commandes 
+        nécessaires au démarrage du système.
+/boot (partition séparée conseillée.)
+        C'est ici que se trouvent les fichiers de votre chargeur d'amorçage (GRUB par exemple) ainsi que vos noyaux linux.
+/dev  :  Les liens vers les périphériques physiques (CD, disques durs…), ainsi que les périphériques virtuels (/dev/null, /dev/random).
+        On peut noter que les périphériques physiques sont nommés sous la forme « /dev/sdXN » avec X étant une lettre et N un numéro :
+    /dev/sda1 représente la première partition (1) de votre premier disque dur (a)
+    /dev/sdd6 représente la sixième partition (6) de votre quatrième disque dur (d)…
+/etc  (editing text config)
+        C'est la cachette des fichiers de configuration des logiciels installés.
+/home (partition séparée conseillée.)
+        Répertoire contenant les dossiers utilisateurs sous la forme /home/nom_utilisateur.
+/lib  :  Répertoire où sont installées les bibliothèques système.
+/mnt  :  Point de montage des partitions internes montées temporairement.
+        On y monte généralement les partitions des disques durs internes. Pour les partitions externes, on utilisera plutôt /media.
+/media  :  Équivalent de /mnt, mais pour les supports amovibles/externes.
+/opt  :  Est réservé pour l'installation des paquetages des greffons d'applications
+/proc  :  Système de fichiers virtuel documentant le noyau et les différents processus.
+/root : Répertoire de l'utilisateur root. Vide par défaut sous ubuntu.
+/sbin : Série d'exécutables pour les administrateurs.
+/srv : Données pour les services hébergés par le système.Par exemple le contenu http-ftp ou une base de données.
+/tmp : (partition séparée conseillée) Répertoire des fichiers temporaires, vidé à chaque démarrage du système.
+/usr : (Unix system ressource) Dossier contenant les exécutables du système qui ne sont pas vitaux à son démarrage et son fonctionnement 
+        minimal.Son architecture est semblable à celle de / .
+/var : Dossier contenant les variables du système, renseignant son état. Divisé en sous-dossiers.
+    /var/lock : Variables de verrouillage.
+            Permet de connaître l'état d'utilisation de logiciels ne devant pas être lancés deux fois en même temps (gparted, mises à jour…).
+    /var/log : Fichiers de journalisation.
+    /var/mail : Boîtes aux lettres des utilisateurs.
+    /var/run : Variables temporaire des logiciels en cours d'exécution.
+    /var/spool : File d'attente des services, notamment pour les imprimantes.
+    /var/tmp : Fichiers temporaires.
+    /var/www : Répertoire web par défaut de Apache.
+
+
+
+
+
+
+terminal:
+shell:
+bash:
+variable env:
+variable env pour une session: 
+variable env pour toutes les sessions: 
+bash alias:
+if:
+for:
+while:
+
+
+Specific command line tools
+cd
+pwd
+rm
+rmdir
+mkdir
+ls
+ln
+find
+grep
+sed
+curl
+
+MUA: Mail User Agent (Un client de messagerie est un logiciel qui sert à lire et envoyer des courriers électroniques.)
+
+MTA: Mail Transfer Agent (un logiciel pour serveur de transmission de courriers électroniques.)
+
+MDA: Mail Delivery Agent (le logiciel qui intervient dans la dernière étape du processus de distribution d'un courrier électronique. C'est le composant chargé de déposer le message dans la boîte aux lettres de l'utilisateur.C'est donc ce logiciel qui est chargé de gérer des problèmes comme un disque plein ou bien une corruption de la boîte aux lettres et signaler au MTA toute erreur dans la distribution.)
+
+Postfix est l'agent de transfert de courriel (MTA). Il est le serveur de courriel par défaut dans plusieurs systèmes de type UNIX, comme Mac OS X, NetBSD1, diverses distributions GNU/Linux, etc.
+
