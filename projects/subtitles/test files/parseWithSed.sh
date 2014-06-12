@@ -16,3 +16,6 @@ findArgument
 
 #Autre methode avec des groupes : echo $1 | sed -e 's/^.*"'$valueWanted'":"\([^"]*\)".*$/\1/'
 #Il manque seulement les [ ]* avant et après le : mais il peuvent être rajoutées
+
+
+
