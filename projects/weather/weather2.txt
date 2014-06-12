@@ -1,0 +1,123 @@
+              <tr> 
+                <td width="70" rowspan="2" align="center" bgcolor="#5da9dd" class=forecast_header_new>Date</td> 
+                <td width="140" colspan="2" align="center" bgcolor="#5da9dd" class=forecast_header_new>Temperature
+                 
+                  <a href="c00194f.htm#wxforecast" class="yellowlink"><sup>o</sup><u>C</u></a></td> 
+                 
+                <td colspan="2" rowspan="2" align="center" bgcolor="#5da9dd" class=forecast_header_new>Weather</td> 
+              </tr>
+              <tr> 
+                <td width="70" align="center" bgcolor="#FBFFE6"><b><font color="#0000FF">Minimum</font></b></td> 
+                <td width="70" align="center" bgcolor="#FBFFE6"><b><font color="#FF0000">Maximum</font></b></td> 
+              </tr> 
+               
+              <tr> 
+                <td width="70" align="center"> 11 
+                  Jun<br>
+                  ( Wed )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  16 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  24 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic25.gif' alt="Fine" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Fine</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+              <tr> 
+                <td width="70" align="center"> 12 
+                  Jun<br>
+                  ( Thu )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  15 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  25 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic24.gif' alt="Sunny" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Sunny</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+              <tr> 
+                <td width="70" align="center"> 13 
+                  Jun<br>
+                  ( Fri )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  16 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  24 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic24.gif' alt="Sunny" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Sunny</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+              <tr> 
+                <td width="70" align="center"> 14 
+                  Jun<br>
+                  ( Sat )
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#0000ff>
+                  15 
+                  </font></b>
+                </td> 
+                <td width="70" align="center">
+                  <b><font color=#ff3300> 
+                  19 
+                  </font></b>
+                </td> 
+                 
+                <td width="45" height="45" align="center" valign="middle"><b><img src='../img_cartoon/pic10.gif' alt="Scattered showers" width="35" height="35"></b></td> 
+                 
+                <td width="255" align="left">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3"> 
+                    <tr> 
+                      <td><b>Scattered showers</b></td> 
+                    </tr> 
+                  </table> 
+                </td>
+              </tr> 
+           
+            <!--FDAY=4-->
+            </table> 
