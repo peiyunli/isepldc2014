@@ -1,0 +1,35 @@
+﻿/home
+
+/usr/local/bin => là où on installe un programme pour usr
+
+/usr/bin => idem mais pour tous les utilisateurs
+
+/var => là où on fout toutes les variables
+
+/etc => tous les trucs de configuration
+
+bash != terminal, c'est un environement de commande (comme tcsh, csh...) parti de l'idée de shell
+
+
+MUA : mail user agent (thunderbird...)
+
+MTA : mail transport agent (couche qui s'occupe d'envoyer et recevoir les mails)
+
+
+MDA : mail distribution agent (quand les mails sont dans le système, ils doivent être répartis entre les utilisateurs, programme facteur)
+
+
+exemple de question : aller sur openshift avec plusieurs navigateurs, et donner la commande permettant de trouver toutes les adresses ip se connectant à openshift
+
+
+
+
+---------
+sed -e => le flag -e dit qu'on veut faire quelque chose, pour ça que la regex commence par une lettre. Sans -e on peut commencer la regex par /
+en sed, faut échaper certains caractères pour qu'ils aien un sens syntaxique (exemple du + ou du \) ou alors on peut ajouter \r pour que sed comprenne (à la place d'escaper à chaque fois)
+global option 	/p => print
+
+		/d => delete
+
+		/g => find and replace
+

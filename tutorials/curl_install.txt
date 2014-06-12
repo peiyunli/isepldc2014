@@ -8,14 +8,16 @@ télécharger curl.tar.gz
 gzip -dc < nom_du_fichier.tar.gz|tar -xf - // pour "dézipper" le fichier
 cd nom_du_fichier.gz.tar // pour accéder au contenu
 
-./configure --prefix=:usr
+./configure --prefix=:usr //:usr à remplacer par le chemin absolu du dossier bin
 make //pour créer l'exécutable, pour compiler
 
 ensuite pour l'utiliser.
 On crée un lien symbolique vers curl pour l'utiliser
 
 
-On configure le PATH grace à set PATH = %PATH%:path_du_dossier_dans_lequel_est_le_fichier
+On configure le PATH grace à setenv PATH %PATH%:path_du_dossier_dans_lequel_est_le_lien_symbolique
+
+exemple : setenv PATH %PATH%:/mnt/monster/home/eleves/2015/wtragnee/bin/curl
 
 Exemple d'utilisation :
 
