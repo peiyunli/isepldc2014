@@ -1,0 +1,16 @@
+Il est possible qu'un élève ait commit sous différents pseudonymes, différentes adresses email.
+Ce fichier permet de lister les pseudonymes et emails utilisés par les élèves sur GitHub.
+ 
+
+ -Christian Wang
+ -Pseudo : Chwang1234, Christian
+
+ -Hadrien Vercier
+ -Pseudo : neirdahcier
+
+ -Dan SCEMAMA
+ -Pseudo : scemamadan, Dan
+
+ -Michael Uzan : michaeluzan
+
+ -Aimery THOMAS : a1mery
