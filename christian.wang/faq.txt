@@ -99,3 +99,16 @@ olivier:29:0298333242:Brest
 
 ------------------------------------------------------------------------------------------------
 
+Cut
+
+Permet de séparer un fichier en colonne selon un séparateur que l'on indique
+
+Ex:
+
+cut -d';' -f1   indique que le séparateur est ; et que l'on garde seulement la première colonne
+
+cut -d';' -f1-  indique que l'on garde toutes les colonnes après la première incluse
+
+cut -d';' -f-3  indique que l'on garde toutes les colonnes avant la troisième incluse
+
+cut -d';' -f3-5 indique que l'on garde les colonnes comprises entre 3 et 5 incluses
