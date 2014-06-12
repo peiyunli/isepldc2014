@@ -4,3 +4,46 @@ Il existe deux méthodes afin d’utiliser Sed :
 - Classique avec un fichier en entrée qui donne un fichier en sortie
 - Direct avec l’option -i qui applique directement la commande sur le fichier en entrée.
 Si nous utilisons la commande Sed (c’est à dire ‘’)seule sur un fichier alors il renvoie l’ensemble du document.
+
+
+Dans votre clone local de WP, faire la liste de toutes les images (*jpg et *png).
+find . -iname "*.jpg" -o -iname "*.png"
+Dans votre clone local de WP, faire la liste de tous les fichiers qui sont datés de moins d’une semaine.
+find . -mtime -7 -ls
+Dans votre clone local de WP, décrire les permissions de fichiers pour les répertoires se trouvant à la racine du dépôt (est-ce que les répertoires sont en lecture seule, écriture, pour qui, etc.)
+ls -la
+Dans votre clone local de WP, changez les permissions d’accès de tous les fichiers *jpg pour qu’ils soient accessibles en lecture seule par l’utilisateur, le groupe et les autres.
+find . -iname "*.jpg" | xargs chmod 444
+Créer un script (du type xxx.sh) qui vérifie que tous les fichiers d’un répertoire donné ne changent pas. (On imagine qu’on lancera ce script toutes les semaines.)
+if [ $# -eq 0 ]
+then
+	echo "Please select a folder to parse."
+else
+	# Recherche (command find) les fichiers modifiés (option -mtime) depuis moins de 7 jours (option -7) -> stock le contenu renvoyé par la commande dans la variable “$modifications”
+	modifications= $(find . -mtime -7)
+fi 
+echo $modifications
+Quand on lance le fichier exécutable xxx.sh, faites en sorte que ce script écrive le résultat dans un autre fichier
+echo $modifications > mod.txt .
+Créer un script qui liste les fichier se terminant en “.zip” et qui les archives dans un répertoire dédié.
+if [ $# -eq 0 ]
+then
+	echo "Please select a folder to parse."
+else
+	mkdir -p arch
+	find $1 -iname "*.zip" | xargs tar -zcvf arch/zip.tar.gz
+fi
+Trouvez les fichiers pour la traduction en français de wordpress (ce sont des fichiers *po et *mo, disponibles sur Internet) et utilisez curl ou wget pour les télécharger et les stocker dans votre copie locale de WP.
+wget URL -O “dossier/mon_fichier_telecharge.zip”
+Pour le répertoire wp-content/, faites la liste des mots de plus de trois lettres les plus couramment utilisés. La liste ne doit pas contenir de doublons, et la liste doit être triée par ordre de mots les plus utilisés.
+# grep pour analyser des fichiers textes et trouver des mots
+# option -R pour une recherche récurssive, c-à-d qu’on va également chercher dans les sous répertoire et pas uniquement le répertoire courant)
+# On recherche l’expression régulière (option -E pour indiquer que c’est une regexp) : “[[:alpha:]]{3,}” ([:alpha:]] pour indiquer que c’est une suite de lettre de l’alphabet (des mots) {3,} pour dire que ces mots recherchés devront contenir 3 ou plus de 3 caractère.
+# sort -> trie les mots trouvés
+# uniq  -> supprime les double (option -c pour compter aussi)
+# head  -> pour afficher que les 10 premiers
+cd wp-content
+grep -R -o -E "[[:alpha:]]{3,}" * | sort | uniq -ic | sort -n -r | head -n 10
+Pour les logs de votre copie locale de WP, (php/logs/), écrire un script pour trouver les extensions des fichiers les plus téléchargés. Expliquez en ajoutant des commentaires dans le script comment vous vous y prenez.
+cd /var/log/apache2/
+grep 'GET' access* | awk '{print $7}' | sort | uniq -c | sort -n -r | head -n 10..
