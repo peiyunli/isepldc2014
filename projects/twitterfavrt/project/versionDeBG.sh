@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Clean files
  if [ tweetDeBG.txt ]
 then
     >tweetDeBG.txt
