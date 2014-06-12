@@ -1,4 +1,4 @@
-Il est possible qu'un �l�ve a commit sous diff�rents pseudonymes, diff�rentes adresses email.
+﻿Il est possible qu'un �l�ve a commit sous diff�rents pseudonymes, diff�rentes adresses email.
 Ce fichier permet de lister les pseudonymes et email utili�s par les �l�ves sur GitHub.
 
 
@@ -10,3 +10,4 @@ Pseudo : neirdahcier
 Dan SCEMAMA
 Pseudo : scemamadan, Dan
 Michael Uzan : michaeluzan
+Aimery THOMAS : a1mery

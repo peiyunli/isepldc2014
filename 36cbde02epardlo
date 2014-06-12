@@ -1,0 +1,274 @@
+[33mcommit 303f138e3499d21745beb9d8793b3af00dafbc23[m
+Merge: a3c0129 e72419f
+Author: unknown <aimery.thomas@outlook.com>
+Date:   Wed Jun 11 22:11:09 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit e72419fb843fd9efccf595f60cdb6d93337888cb[m
+Author: Jean <mouvilliat.jean@gmail.com>
+Date:   Wed Jun 11 14:51:09 2014 +0200
+
+    Ajout d'une fiche rappel pour l'examen
+
+[33mcommit 707849c9be063b0fa1d1b6d89c75b1084ad877f0[m
+Author: chwang1234 <chwang1234@gmail.com>
+Date:   Sun Jun 8 12:17:20 2014 +0200
+
+    projet film filtre vote
+
+[33mcommit 588306e389719b8e9972aa239b956ab91afeedf5[m
+Author: neirdahcier <hadrien.vercier@gmail.com>
+Date:   Sun Jun 8 01:29:14 2014 +0200
+
+    add web interface
+
+[33mcommit 55cd8bb7e918101ac455655836f86d113688e21d[m
+Author: Chwang1234 <chwang1234@gmail.com>
+Date:   Sat Jun 7 12:41:42 2014 +0200
+
+    Fichier listant les pseudos des eleves
+
+[33mcommit ec0f81f944b32ed3157d49316828fbb7f47568b6[m
+Author: neirdahcier <hadrien.vercier@gmail.com>
+Date:   Sat Jun 7 07:38:01 2014 +0200
+
+    add template html, it remains just the link between this template and the file parsed
+
+[33mcommit 199b36f2e010a2a4c0cb90142cb3fe8556ac389f[m
+Author: Chwang1234 <chwang1234@gmail.com>
+Date:   Sat Jun 7 00:15:50 2014 +0200
+
+    ajout ligne revision
+
+[33mcommit e8a045e1cf8dc277105b8577dbf84b429ce52cd8[m
+Author: Christian <narugan@hotmail.fr>
+Date:   Fri Jun 6 23:55:33 2014 +0200
+
+    ajout ligne pour le fichier revision
+
+[33mcommit 16fd7ce56562a96f4ea753771a0b8b3556cb30c7[m
+Author: chwang1234 <chwang1234@gmail.com>
+Date:   Fri Jun 6 23:45:56 2014 +0200
+
+    projet film rajout d'un filtre et correction de sed
+
+[33mcommit fd526ef28babb84370e57d1705d361badc09f9a8[m
+Author: neirdahcier <hadrien.vercier@gmail.com>
+Date:   Fri Jun 6 22:03:26 2014 +0200
+
+    add script to match the 2 files and create the final file for the future html
+
+[33mcommit 278f498842f62ea2e6ebde92986016b2e83347fd[m
+Author: Christian <narugan@hotmail.fr>
+Date:   Fri Jun 6 13:46:05 2014 +0200
+
+    revision ajout de la signification des commandes git
+
+[33mcommit 570cd55da811a89e9d3e3b428c387a642b8463d7[m
+Author: Christian <narugan@hotmail.fr>
+Date:   Fri Jun 6 10:23:42 2014 +0200
+
+    fichier de revision
+
+[33mcommit 7eab2ff27b87545517145cc6f8cfa67a31f3607f[m
+Author: chwang1234 <chwang1234@gmail.com>
+Date:   Wed Jun 4 23:33:35 2014 +0200
+
+    projet film ajout filtre
+
+[33mcommit a3c012973c26972c5398af66980cb4c86b5f4630[m
+Merge: a876dfc 556e1a7
+Author: unknown <aimery.thomas@outlook.com>
+Date:   Wed Jun 4 17:36:52 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit 556e1a7d72a2a623cc22b1461b8c6194028c0cac[m
+Author: Dan <scemamadan@gmail.com>
+Date:   Wed Jun 4 15:35:54 2014 +0200
+
+    add cours curl
+
+[33mcommit 30ebe728359524ad979c69c8e1d05822f184786c[m
+Author: Dan <scemamadan@gmail.com>
+Date:   Wed Jun 4 15:29:57 2014 +0200
+
+    transform adress in gps coord via google maps api
+
+[33mcommit 6ed98d380c003cc080d0892f3254d5af058a43cc[m
+Author: Dan <scemamadan@gmail.com>
+Date:   Wed Jun 4 15:28:44 2014 +0200
+
+    update project gps
+
+[33mcommit d862ecb238169a83ccacec5bff7e18dab8e19036[m
+Author: Dan <scemamadan@gmail.com>
+Date:   Wed Jun 4 15:26:16 2014 +0200
+
+    add questions & cours
+
+[33mcommit b718694af93c5201b13b1430dec9d7ccd81df879[m
+Author: Dan <scemamadan@gmail.com>
+Date:   Wed Jun 4 15:22:55 2014 +0200
+
+    test.text
+
+[33mcommit 4a6b0914ef8b23bca91d951cd37d0c491544bf07[m
+Author: Dan <scemamadan@DAN-XPS13.(none)>
+Date:   Wed Jun 4 15:12:05 2014 +0200
+
+    delete test.txt
+
+[33mcommit cf38c29f4e46ac0a4b93ab5b8d465e63aa68994a[m
+Author: Dan <scemamadan@DAN-XPS13.(none)>
+Date:   Wed Jun 4 15:01:51 2014 +0200
+
+    test ssh connecting
+
+[33mcommit a876dfc8e6145693ef22189f7298a29cc5e61258[m
+Merge: 4f5c703 88b3f33
+Author: unknown <aimery.thomas@outlook.com>
+Date:   Sat May 31 12:29:46 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit 88b3f33c2ccd87b6fe1e41271104d5e2262e785e[m
+Merge: 25fcd29 229f80b
+Author: Bastien Guerry <bzg@altern.org>
+Date:   Sat May 31 09:25:01 2014 +0200
+
+    Merge branch 'master' of github.com:nicolasroger17/isepldc2014
+
+[33mcommit 25fcd290f49f31d2a5e7c0d73a660117a3944d69[m
+Author: Bastien Guerry <bzg@altern.org>
+Date:   Sat May 31 09:24:52 2014 +0200
+
+    Update  "What to know"
+
+[33mcommit 229f80b9f45318790adfc6fc86d9d3e7bc78e1eb[m
+Author: Dan <scemamadan@DAN-XPS13.(none)>
+Date:   Fri May 30 15:28:24 2014 +0200
+
+    step 1 project gps coord
+
+[33mcommit 546abfb8029a2033a9aa9938ce246c12fa7ee765[m
+Author: Dan <scemamadan@DAN-XPS13.(none)>
+Date:   Fri May 30 15:23:36 2014 +0200
+
+    questions
+
+[33mcommit d6276ad5a866131ee1f6cb37141c86b942c738fd[m
+Merge: 4875f11 a43c5d0
+Author: Dan <scemamadan@DAN-XPS13.(none)>
+Date:   Fri May 30 15:09:57 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit a43c5d0d535e3de55eae92359bb98edcd963ccb6[m
+Author: nicolasroger17 <nicolasroger17@gmail.com>
+Date:   Fri May 30 13:32:14 2014 +0200
+
+    modify gitignore
+
+[33mcommit 8c2f2ced2df055e74ded92d96b967e4db21d6c12[m
+Author: christian wang <chwang@frelon.isep.fr>
+Date:   Fri May 30 12:37:42 2014 +0200
+
+    add month to file filter1
+
+[33mcommit 8227c0445df1861af4d5e6ddf0a0c6bae999d458[m
+Author: clairetouron <clairetouron@yahoo.fr>
+Date:   Fri May 30 12:29:01 2014 +0200
+
+    what to know for exam + notes
+
+[33mcommit ffeb2ddf2a56744305753c1ed4aeb4c4d66efcd6[m
+Author: clairetouron <clairetouron@yahoo.fr>
+Date:   Fri May 30 12:25:45 2014 +0200
+
+    modif tuto3
+
+[33mcommit bfaaf951bad4067a70f57ea4f4ebfdbfd47abc50[m
+Merge: d35fc27 9653bb3
+Author: neirdahcier <hadrien.vercier@gmail.com>
+Date:   Fri May 30 12:21:13 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit d35fc275a2f291092288869afcd663ac615d6546[m
+Author: neirdahcier <hadrien.vercier@gmail.com>
+Date:   Fri May 30 12:20:59 2014 +0200
+
+    begin match work+ test file for the html
+
+[33mcommit 4f5c7036755cd22a32f1388a9684b6952da74615[m
+Merge: 6317c53 9653bb3
+Author: unknown <aimery.thomas@outlook.com>
+Date:   Fri May 30 12:20:34 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit 9653bb3bf2e50771beadc399cf147ea3e7929775[m
+Author: clairetouron <clairetouron@yahoo.fr>
+Date:   Fri May 30 12:19:46 2014 +0200
+
+    claire tuto3
+
+[33mcommit 6317c5392b0a922e36a03778e7eb9dad44da8ed5[m
+Merge: c0fe252 9bca8bb
+Author: unknown <aimery.thomas@outlook.com>
+Date:   Fri May 30 12:16:11 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit 113060592a37d9b1a057bad75583c60787aacf7e[m
+Merge: 176a56d 9bca8bb
+Author: clairetouron <clairetouron@yahoo.fr>
+Date:   Fri May 30 12:15:08 2014 +0200
+
+    Merge branch 'master' of https://github.com/nicolasroger17/isepldc2014
+
+[33mcommit 176a56d1d386149e58c138c8c967e5c2e16ba5e2[m
+Author: clairetouron <clairetouron@yahoo.fr>
+Date:   Fri May 30 12:14:32 2014 +0200
+
+    Comment se connecter à Openshift?
+
+[33mcommit 9bca8bbe398cb7159fbffea792215d45759db4f6[m
+Author: nicolasroger17 <nicolasroger17@gmail.com>
+Date:   Fri May 30 12:11:19 2014 +0200
+
+    remove /.DS_Store
+
+[33mcommit 4747963d5d8cbf220f4353cb79aae4abb497e6ac[m
+Author: nicolasroger17 <nicolasroger17@gmail.com>
+Date:   Fri May 30 12:07:53 2014 +0200
+
+    ignore DS_Store
+
+[33mcommit 2ad2a4c3febfe94137d50b9f82f3995df99e1eb9[m
+Merge: 336679c 157990a
+Author: Bastien Guerry <bzg@altern.org>
+Date:   Fri May 30 11:23:10 2014 +0200
+
+    Merge branch 'peiyunli-master'
+
+[33mcommit 157990a9089837dcc3537d5318301cbf6faf6439[m
+Merge: 336679c e9884da
+Author: Bastien Guerry <bzg@altern.org>
+Date:   Fri May 30 11:22:49 2014 +0200
+
+    Merge branch 'master' of https://github.com/peiyunli/isepldc2014 into peiyunli-master
+    
+    Conflicts:
+    	.DS_Store
+
+[33mcommit 336679c842180754748f2f992ea6cfb91cbf45ef[m
+Merge: 3c3d3cb c33ccac
+Author: Bastien <bzg@altern.org>
+Date:   Fri May 30 11:02:51 2014 +0200
+
+    Merge pull request #81 from wanhong123/master
+    
+    add reportofproje
