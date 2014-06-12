@@ -1,0 +1,197 @@
+{\rtf1\ansi\ansicpg936\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fnil\fcharset134 STHeitiSC-Light;
+}
+{\colortbl;\red255\green255\blue255;\red133\green0\blue175;\red74\green0\blue230;\red59\green0\blue164;
+\red102\green0\blue141;\red41\green0\blue130;\red134\green19\blue62;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Thu May 29 13:03:01 on ttys001\
+fionadeair:~ fionawan$ ls\
+Desktop		Movies		git		springsource\
+Documents	Music		isepldc2014	tweepy\
+Downloads	Pictures	nltk_data	weather.txt\
+Library		Public		node		web\
+fionadeair:~ fionawan$ cd isepldc2014/\
+fionadeair:isepldc2014 fionawan$ cd hong.wan/\
+fionadeair:hong.wan fionawan$ curl http://www.worldweather.org/062/c00194.htm -o weather.txt\
+
+\fs36 \cf2 use curl get the html page and use -o turn to weather.txt
+\fs22 \
+\cf0 \
+\
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\
+                                 Dload  Upload   Total   Spent    Left  Speed\
+100 35667  100 35667    0     0  11751      0  0:00:03  0:00:03 --:--:-- 11755\
+fionadeair:hong.wan fionawan$ head weather.txt -n 515 > weather1.txt\
+\
+\
+\
+fionadeair:hong.wan fionawan$ head -n 515 weather.txt > weather1.txt\
+\
+
+\fs36 \cf3 get the first 515 lines of weather.txt and write it to weather1.txt
+\fs22 \cf0 \
+\
+\
+fionadeair:hong.wan fionawan$ tail -n 123 weather1.txt > weather2.txt\
+\
+
+\fs36 \cf3 get the last 123 lines of weather1.txt and write it to weather2.txt
+\fs22 \
+\cf0 \
+\
+fionadeair:hong.wan fionawan$ sed -e 's/<[^>]*>//g' weather2.txt > weather3.txt\
+\
+\
+
+\fs36 \cf4 delete all of the html tags such as<tb></tb> ,
+\f1 \CocoaLigature1 's/<[^>]*>//g'  means use the string method to replace all <>label to empty string of 
+\f0 \cf5 \CocoaLigature0 weather2.txt \cf3 and write it to weather3.txt
+\fs22 \
+
+\fs36 \cf4 \
+
+\fs22 \cf0 \
+\
+fionadeair:hong.wan fionawan$ sed -e '/^[[:space:]]*$/d' weather3.txt > weather4.txt\
+\
+\
+
+\fs36 \cf5 delete all of the blank lines of weather3.txt and write it to weather4.txt
+\fs22 \cf0 \
+\
+\
+\
+fionadeair:hong.wan fionawan$ sed -e 's/^ *//' weather4.txt > weather5.txt\
+\
+
+\fs36 \cf5 delete all of the space at the beginning of each line of weather4.txt and write it to weather5.txt
+\fs22 \cf0 \
+\
+\
+\
+fionadeair:hong.wan fionawan$ cat weather5.txt\
+\
+\
+
+\fs36 \cf5 show the content of weather5.txt
+\fs22 \cf0 \
+\
+\
+\
+Date \
+Temperature\
+oC \
+Weather \
+Minimum \
+Maximum \
+29 \
+May\
+( Thu )\
+10 \
+19 \
+Scattered showers \
+30 \
+May\
+( Fri )\
+11 \
+21 \
+Fine \
+31 \
+May\
+( Sat )\
+13 \
+21 \
+Fine \
+01 \
+Jun\
+( Sun )\
+12 \
+18 \
+Fine \
+\
+
+\fs36 \cf6 \
+let\'92s arrange the styles of weather5
+\f2 .txt and make it more pretty
+\f0\fs22 \cf0 \
+\
+\
+fionadeair:hong.wan fionawan$ ls_line1=`cat weather5.txt | head -n 1`\
+fionadeair:hong.wan fionawan$ ls_line2=`cat weather5.txt | head -n 2 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line3=`cat weather5.txt | head -n 3 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line4=`cat weather5.txt | head -n 4 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line5=`cat weather5.txt | head -n 5 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line6=`cat weather5.txt | head -n 6 | tail -n 1`\
+fionadeair:hong.wan fionawan$ echo $\{ls_line1\} '          ' $\{ls_line2\} $\{ls_line3\} '     ' $\{ls_line4\} > weather6.txt\
+fionadeair:hong.wan fionawan$ echo '                '$\{ls_line5\} $\{ls_line6\} >> weather6.txt\
+\
+\
+\
+
+\fs36 \cf6 read the content of line1 to line 6 and rewrite line1 to line4 at the first line of a new weather6.txt,and rewrite line5 and line 6 at the end of weather6.txt\
+\
+\
+\
+the same as bellows \
+\
+
+\fs22 \cf0 \
+\
+\
+fionadeair:hong.wan fionawan$ ls_line1=`cat weather5.txt | head -n 7 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line2=`cat weather5.txt | head -n 8 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line3=`cat weather5.txt | head -n 9 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line4=`cat weather5.txt | head -n 10 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line5=`cat weather5.txt | head -n 11 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line6=`cat weather5.txt | head -n 12 | tail -n 1`\
+fionadeair:hong.wan fionawan$ echo $\{ls_line1\} $\{ls_line2\}$\{ls_line3\}'   '$\{ls_line4\}'      '$\{ls_line5\}'       '$\{ls_line6\} >> weather6.txt\
+fionadeair:hong.wan fionawan$ ls_line1=`cat weather5.txt | head -n 13 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line2=`cat weather5.txt | head -n 14 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line3=`cat weather5.txt | head -n 15 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line4=`cat weather5.txt | head -n 16 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line5=`cat weather5.txt | head -n 17 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line6=`cat weather5.txt | head -n 18 | tail -n 1`\
+fionadeair:hong.wan fionawan$ \
+fionadeair:hong.wan fionawan$ echo $\{ls_line1\} $\{ls_line2\}$\{ls_line3\}'   '$\{ls_line4\}'      '$\{ls_line5\}'       '$\{ls_line6\} >> weather6.txt\
+fionadeair:hong.wan fionawan$ \
+fionadeair:hong.wan fionawan$ ls_line1=`cat weather5.txt | head -n 19 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line2=`cat weather5.txt | head -n 20 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line3=`cat weather5.txt | head -n 21 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line4=`cat weather5.txt | head -n 22 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line5=`cat weather5.txt | head -n 23 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line6=`cat weather5.txt | head -n 24 | tail -n 1`\
+fionadeair:hong.wan fionawan$ \
+fionadeair:hong.wan fionawan$ echo $\{ls_line1\} $\{ls_line2\}$\{ls_line3\}'   '$\{ls_line4\}'      '$\{ls_line5\}'       '$\{ls_line6\} >> weather6.txt\
+fionadeair:hong.wan fionawan$ \
+fionadeair:hong.wan fionawan$ ls_line1=`cat weather5.txt | head -n 25 | tail -n 1`\
+ls_line2=`cat weather5.txt | head -n 26 | tail -n 1`\
+ls_line3=`cat weather5.txt | head -n 27 | tail -n 1`\
+ls_line4=`cat weather5.txt | head -n 28 | tail -n 1`\
+ls_line5=`cat weather5.txt | head -n 29 | tail -n 1`\
+ls_line6=`cat weather5.txt | head -n 30 | tail -n 1`\
+\
+echo $\{ls_line1\} $\{ls_line2\}$\{ls_line3\}'   '$\{ls_line4\}'      '$\{ls_line5\}'       '$\{ls_line6\} >> weather6.txtfionadeair:hong.wan fionawan$ ls_line2=`cat weathe1`.txt | head -n 26 | tail -n  \
+fionadeair:hong.wan fionawan$ ls_line3=`cat weather5.txt | head -n 27 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line4=`cat weather5.txt | head -n 28 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line5=`cat weather5.txt | head -n 29 | tail -n 1`\
+fionadeair:hong.wan fionawan$ ls_line6=`cat weather5.txt | head -n 30 | tail -n 1`\
+fionadeair:hong.wan fionawan$ \
+fionadeair:hong.wan fionawan$ echo $\{ls_line1\} $\{ls_line2\}$\{ls_line3\}'   '$\{ls_line4\}'      '$\{ls_line5\}'       '$\{ls_line6\} >> weather6.txt\
+\
+\
+
+\fs48 \cf7 finally we got our beautiful output!!
+\fs22 \cf0 \
+\
+\
+\
+fionadeair:hong.wan fionawan$ cat weather6.txt\
+Date            Temperature oC       Weather\
+            Minimum Maximum\
+29 May( Thu )   10       19        Scattered showers\
+30 May( Fri )   11       21        Fine\
+31 May( Sat )   13       21        Fine\
+01 Jun( Sun )   12       18        Fine\
+fionadeair:hong.wan fionawan$ }

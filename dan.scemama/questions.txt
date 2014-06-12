@@ -1,0 +1,9 @@
+QUESTIONS :
+
+1 - How to pass arguments to the bash script ?
+=> We can use predefined variables to acess passed arguments
+
+2 - Est ce que bash = shell ?
+=> Le shell désigne le programme qui interprète les commandes, et par extension le langage associé. Bash est un shell. Le shell standard est sh. bash est un surensembles de sh.
+Pour connaitre son type de shell, il faut entrer "echo $SHELL"
+exemple avec ubuntu : /bin/bash
