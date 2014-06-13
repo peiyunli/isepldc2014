@@ -1,0 +1,8 @@
+1. What is SSH ?
+   Secure Shell (SSH) is a cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers.
+
+2. What is openshift ?
+OpenShift is a cloud computing platform as a service product from Red Hat. 
+The software that runs the service is open-sourced under the name OpenShift Origin, and is available on GitHub. Developers can use Git to deploy web applications in different languages on the platform
+
+

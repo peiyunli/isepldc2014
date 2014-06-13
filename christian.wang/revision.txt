@@ -1,0 +1,33 @@
+#+TITLE: What to know?  Prepare for the exam and the evaluation
+
+* Git
+
+You need to be comfortable with a basic Git collaborative workflow
+such as the one we used during the lessons.
+
+For example, you need to know
+
+1. how to connect to your github.com account : connect through the website, need to create a SSH key
+2. how to "fork" a repository from someone else account: fork on the website which clone the projet on our repository, clone the repository
+3. how to clone this repository of yours into your computer : git clone https://...
+4. how to commit changes locally on your computer : git add -a (option all), then git commit -m "message"
+5. how to push these changes on your github repository : git push
+6. how to send a "pull request" to the repository you forked from : pull request from the website 	https://help.github.com/articles/using-pull-requests
+
+- =git status= affiche l'état du répertoire
+- =git log= permet d'afficher l'historique du projet
+- =git clone= permet de cloner un répertoire personnel
+- =git add= permet d'ajouter un fichier en attente pour commit puis push and =git rm= supprime un fichier
+- =git commit= permet de commit un fichier
+- =git pull and git pull= permet de récupérer les modifs faites
+
+Public key
+
+You need to know how to create a public key.
+
+* IaaS / PaaS / SaaS and openshift
+
+You need to know the basics about what is SaaS, PaaS and IaaS.
+
+In front of a project, you need to be able to make choices about what
+web service to use and why.
