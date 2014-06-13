@@ -1,0 +1,24 @@
+step 1 : Get gps coord from an adress using Gmaps API
+step 2 : Parse all the velib stations based on a xml file (carto.xml) and get the lats/longs coordinates in 2 arrays
+step 3 : determine the distance on between the adresse and the station each station based on a php "webservice" made by us
+step 4 : if the distance is smaller than the smallest that we had, then we get the index of this station + the current shorstest distant
+step 5 : we print the result and email the user with the informations
+
+======
+
+HOW IT WORKS ?
+
+Just launch the "project.sh" file
+
+* enter the postal adress you want : for example "4 rue isabey 75016"
+* Then enter your email adress to have the result by mail
+
+*** BE CAREFUL : The process is very slow (~8 minutes) because we ask a webservice to get the distance for each station. (there are 2451 stations).
+
+
+====
+
+MORE INFORMATIONS :
+
+We let the php file which is used to determine the distance between 2 points. This file is on the Internet on our own server.
+

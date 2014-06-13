@@ -44,3 +44,7 @@ Name of the project:
 Goal: Make it easier to download the correct subtitle file for a given
 vidéo.
 
+* Velib
+Name of the project : How far ?
+
+Goal : Get the shortest velib station from a postal address and get it by mail
