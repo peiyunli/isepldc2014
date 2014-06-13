@@ -1,3 +1,7 @@
+american
 chinese
 french
+german
 italian
+japanese
+vietnamese
