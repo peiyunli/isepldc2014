@@ -1,1 +1,0 @@
-step 1 : Get gps coord from an adress using Gmaps API

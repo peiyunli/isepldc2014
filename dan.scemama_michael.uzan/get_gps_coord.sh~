@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "saisissez votre adresse :"
 read address
 
 url="http://maps.google.com/maps/api/geocode/json?address=$address%22&sensor=false"
@@ -10,6 +10,10 @@ url=$(echo $url | sed 's/\ /%20/g')
 echo $url
 
 lat=$(curl $url | grep 'lat' | head -n 1)
+echo "on recuperer lat":
 lat=$(echo $lat | tr -cd '[[:digit:]]._-')
-lng=$(curl $url | grep 'lng' | head -n 1)
-lng=$(echo $lng | tr -cd '[[:digit:]]._-')
+echo $lat
+#lng=$(curl $url | grep 'lng' | head -n 1)
+#lng=$(echo $lng | tr -cd '[[:digit:]]._-')
+
+sleep 1000

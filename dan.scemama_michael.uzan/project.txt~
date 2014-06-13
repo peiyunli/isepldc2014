@@ -1,0 +1,5 @@
+step 1 : Get gps coord from an adress using Gmaps API
+step 2 : Parse all the velib stations based on a xml file (carto.xml) and get the lats/longs coordinates in 2 arrays
+step 3 : determine the distance on between the adresse and the station each station based on a php "webservice" made by us
+step 4 : if the distance is smaller than the smallest that we had, then we get the index of this station + the current shorstest distant
+step 5 : we print the result and email the user with the informations
